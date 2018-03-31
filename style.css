@@ -1,7 +1,7 @@
     header {
-        background-image: url(images/top-img_828x552.png);
-        height: 552px;
-        background-size: contain;
+        background-image: url(images/top-img_414x276.png);
+        height: 276px;
+        background-size: cover;
         background-repeat: no-repeat;
         position: relative;
     }
@@ -27,6 +27,61 @@
 
     span {
         color: #693074;
+    }
+
+    .tasks {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 10px;
+    }
+
+    .tasks h1 {
+        grid-column-start: 2;
+        color: #83c5f2;
+    }
+
+    video {
+        width: 90vw;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+        color: #6565c0;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #reference,
+    #map {
+        width: 95vw;
+    }
+    /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
+
+    .svg-div {
+        text-align: center;
+    }
+
+    svg {
+        width: 5em;
+    }
+
+    rect,
+    circle,
+    path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 4s linear forwards;
+    }
+
+    @keyframes draw {
+        from {
+            stroke-dashoffset: 1000;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
     }
     /*//////////////////desktop style FOR frontpage/////////////////////*/
 
