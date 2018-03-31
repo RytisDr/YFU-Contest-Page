@@ -57,6 +57,17 @@
     #map {
         width: 95vw;
     }
+
+    footer {
+        background: -webkit-linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    footer .tasks h1 {
+        color: white;
+    }
     /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
 
     .svg-div {
