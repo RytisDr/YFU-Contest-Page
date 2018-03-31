@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+header{
+    height: 275px;
+    background: url(img/Top-Image_666x341.jpg);
+    background-size: cover;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 32px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger {
+    cursor: pointer;
+    right: 15px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 5;
+}
+
+.XBar1, .XBar2{
+    width: 32px;
+    height: 3px;
+    margin: 20px 10px;
+    position: absolute;
+    background-color: lightgray;
+    transform: rotate(-45deg);
+}
+.XBar2{
+    transform: rotate(45deg);
+}
+.XButton{
+    position: absolute;
+    cursor: pointer;
+    height: 43px;
+    width: 50px;
+}
+.menuList {
+    list-style-type: none;
+    position: absolute;
+    background-color: black;
+    color: grey;
+    opacity: 0.9;
+    height: 275px;
+    width: 0px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+.liItem{
+    opacity: 1;
+    margin: 35px 20px;
+    text-align: right;
+}
+.menuList li:nth-child(2){
+    margin-top: 60px;
+}
+.currentItem{
+    color: white;
+    font-weight: 600;
+    padding-right: 20px;
+    border-right: 2px white solid;
+    margin-right: 0px;
+}
+.menuSlide{
+    animation: menuSlide 0.5s forwards;
+}
+@keyframes menuSlide{
+    to{
+        width: 155px;
+    }
+}
+.dontDisplay{
+    display: none;
+}
