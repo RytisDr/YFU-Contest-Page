@@ -1,0 +1,38 @@
+    header {
+        background-image: url(images/top-img_828x552.png);
+        height: 552px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #line {
+        height: 2px;
+        width: 30vw;
+        background-color: #693074;
+    }
+
+    #logo {
+        width: 15vw;
+        max-width: 100px;
+    }
+
+    #slogan {
+        font-family: Shree Devanagari 714;
+        font-size: 3vw;
+        position: absolute;
+        left: 18vw;
+        top: 3vh;
+    }
+
+    span {
+        color: #693074;
+    }
+    /*//////////////////desktop style FOR frontpage/////////////////////*/
+
+    @media only screen and (min-width: 666px) {
+        header {
+            background-image: url(images/top-img_1242x828.png);
+            height: 828px;
+        }
+    }
