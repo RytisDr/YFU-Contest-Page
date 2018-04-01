@@ -6,21 +6,28 @@ const xButton = document.querySelector(".XButton");
 const menuListItem = document.querySelectorAll(".liItem");
 if (mq.matches) {
     burger.addEventListener('click', function () {
-        menuList.classList.toggle("dontDisplay");
+        for (var i = 0; i < menuListItem.length; ++i) {
+                menuListItem[i].classList.remove("dontDisplay");
+            }
+        menuList.classList.remove("dontDisplay");
         menuList.classList.add("menuSlide");
         burger.classList.add("dontDisplay");
-        menuList.addEventListener("animationend", function () {
-            for (var i = 0; i < menuListItem.length; ++i) {
-                menuListItem[i].classList.remove('dontDisplay');
-            }
+        xButton.classList.remove("dontDisplay");
+        menuList.addEventListener("animationend", function openMenu () {
+             menuList.removeEventListener("animationend", openMenu);
         })
     })
     xButton.addEventListener('click', function () {
-        menuList.classList.remove("menuSlide");
-        menuList.classList.toggle("dontDisplay");
-        burger.classList.remove("dontDisplay");
-        for (var i = 0; i < menuListItem.length; ++i) {
-                menuListItem[i].classList.add('dontDisplay');
+       for (var i = 0; i < menuListItem.length; ++i) {
+                menuListItem[i].classList.add("dontDisplay");
             }
+        xButton.classList.add("dontDisplay");
+        menuList.classList.replace("menuSlide", "menuSlideClose");
+        burger.classList.remove("dontDisplay");
+        menuList.addEventListener("animationend", function closeMenu () {
+            menuList.classList.remove("menuSlideClose");
+            burger.classList.remove("dontDisplay");
+            menuList.removeEventListener("animationend", closeMenu);
+        })
     })
 };
