@@ -1,4 +1,7 @@
 const video = document.getElementById("contest-video");
+const iconsInstructions = document.querySelectorAll("#instructions path, #instructions rect, #instructions circle, #instructions line");
+const iconsFooter = document.querySelectorAll("#footer path, #footer rect, #footer circle, #footer line");
+
 
 /*Event listener for the video in the index page*/
 
@@ -8,42 +11,39 @@ video.addEventListener('ended', function () {
     video.load();
 });
 
-function getOffset(el) {
-    var _x = 0;
-    var _y = 0;
-    while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-        _x += el.offsetLeft - el.scrollLeft;
-        _y += el.offsetTop - el.scrollTop;
-        el = el.offsetParent;
-    }
-    return {
-        top: _y,
-        left: _x
-    };
-    console.log(_x, _y);
-}
-var x = getOffset(document.getElementById('first-svg')).top;
 
 window.onscroll = function () {
-    myFunction()
+    drawsTaskIcons();
+    drawsFooterIcons();
 };
 
-function myFunction() {
-    if (document.body.scrollTop > 740 || document.documentElement.scrollTop > 740) {
-        document.querySelectorAll("path, rect, circle, line").forEach(e => {
+function drawsTaskIcons() {
+
+    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+        iconsInstructions.forEach(e => {
             e.classList.add("drawing");
 
         })
-        if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-            document.querySelectorAll("path, rect, circle, line").forEach(e => {
-                e.classList.add("drawing");
-
-            })
-
-        } else {
-            document.querySelectorAll("path, rect, circle, line").forEach(e => {
-                e.classList.remove("drawing");
-            })
-        }
+    } else {
+        iconsInstructions.forEach(e => {
+            e.classList.remove("drawing");
+        })
     }
 }
+
+function drawsFooterIcons() {
+
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+        iconsFooter.forEach(e => {
+            e.classList.add("drawing");
+
+        })
+    } else {
+        iconsFooter.forEach(e => {
+            e.classList.remove("drawing");
+        })
+    }
+}
+
+var d = document.getElementById("first-svg");
+var topPos = d.offsetTop;

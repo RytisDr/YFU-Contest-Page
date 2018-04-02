@@ -68,7 +68,7 @@
         width: 95vw;
     }
 
-    footer {
+    #footer {
         background: -webkit-linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
