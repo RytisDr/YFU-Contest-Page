@@ -1,23 +1,29 @@
+/*BODY PROPERTIES*/
 #videoPage {
     margin: 0;
     overflow-x: hidden;
     background: #61B5F3;
 }
+/*MOBILE HEADER FOR THE VIDEO PAGE*/
 header{
     height: 275px;
     background: url(img/Top-Image_666x341.jpg);
     background-size: cover;
     position: relative;
 }
+/*LOGO*/
 #logotype{
     position: absolute;
     width: 30vw;
     max-width: 220px;
     left: 1vw;
 }
+/*DESKTOP NAV IS NOT DISPLAYED*/
 .desktopNav{
     display: none;
 }
+/*/////////////////////////////////////////////////*/
+/*BURGER MENU ON MOBILE////////////////////////////////////////*/
 .bar1,
 .bar2,
 .bar3 {
@@ -89,6 +95,7 @@ header{
     border-right: 2px white solid;
     margin-right: 0px;
 }
+/*BURGER MENU ANIMATIONS////////////*/
 .menuSlide{
     animation: menuSlide 0.4s forwards;
 }
@@ -119,6 +126,8 @@ header{
         opacity: 1;
     }
     }
+/*///////////////////////////////////////////////*/
+/*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
 .videos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
@@ -130,9 +139,7 @@ header{
     border: solid;
     background: white;
 }
-.dontDisplay{
-    display: none;
-}
+/*BREAKPOINT///////////////////////////////////*/
 @media only screen and (min-width:666px){
     header{
         height: 226px;
@@ -147,7 +154,11 @@ header{
         right: 7vw;
         top: 40%;
     }
-    .desktopNav a{
-        margin-right: 3vw;
+    .desktopNav a:nth-child(-n+3){
+        margin-right: 5vw;
     }
+}
+/*////////////////////////CLASS FOR NO DISPLAY*/
+.dontDisplay{
+    display: none;
 }
