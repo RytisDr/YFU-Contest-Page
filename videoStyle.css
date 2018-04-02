@@ -1,11 +1,22 @@
-body {
+#videoPage {
     margin: 0;
     overflow-x: hidden;
+    background: #61B5F3;
 }
 header{
     height: 275px;
     background: url(img/Top-Image_666x341.jpg);
     background-size: cover;
+    position: relative;
+}
+#logotype{
+    position: absolute;
+    width: 30vw;
+    max-width: 220px;
+    left: 1vw;
+}
+.desktopNav{
+    display: none;
 }
 .bar1,
 .bar2,
@@ -19,7 +30,6 @@ header{
 .burger {
     cursor: pointer;
     right: 15px;
-    margin-top: 10px;
     position: absolute;
     z-index: 4;
     animation: opacity 0.6s forwards;
@@ -51,6 +61,7 @@ header{
     height: 275px;
     width: 0px;
     right: 0;
+    top: 0;
     margin: 0;
     padding: 0;
 }
@@ -117,7 +128,26 @@ header{
     width: 200px;
     height: 100px;
     border: solid;
+    background: white;
 }
 .dontDisplay{
     display: none;
+}
+@media only screen and (min-width:666px){
+    header{
+        height: 226px;
+        background: white;
+    }
+    .burger{
+        display: none;
+    }
+    .desktopNav{
+        display: inherit;
+        position: absolute;
+        right: 7vw;
+        top: 40%;
+    }
+    .desktopNav a{
+        margin-right: 3vw;
+    }
 }
