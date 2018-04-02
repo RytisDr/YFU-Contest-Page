@@ -14,8 +14,8 @@ header{
 /*LOGO*/
 #logotype{
     position: absolute;
-    width: 30vw;
-    max-width: 220px;
+    width: 25vw;
+    max-width: 100px;
     left: 1vw;
 }
 /*DESKTOP NAV IS NOT DISPLAYED*/
@@ -141,8 +141,9 @@ header{
 }
 /*BREAKPOINT///////////////////////////////////*/
 @media only screen and (min-width:666px){
+   /* HEADER STUFF*/
     header{
-        height: 226px;
+        height: 100px;
         background: white;
     }
     .burger{
@@ -153,10 +154,19 @@ header{
         position: absolute;
         right: 7vw;
         top: 40%;
-    }
+        font-weight: 600;
+     }
     .desktopNav a:nth-child(-n+3){
         margin-right: 5vw;
     }
+    .currentItem{
+    color: black;
+    font-weight: 700;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 3px #65256A solid;
+    padding-bottom: 10px;
+}
 }
 /*////////////////////////CLASS FOR NO DISPLAY*/
 .dontDisplay{
