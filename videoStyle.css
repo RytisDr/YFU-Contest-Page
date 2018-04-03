@@ -1,29 +1,39 @@
 /*BODY PROPERTIES*/
+
 #videoPage {
     margin: 0;
     overflow-x: hidden;
     background: #61B5F3;
 }
+
 /*MOBILE HEADER FOR THE VIDEO PAGE*/
-header{
+
+header {
     height: 275px;
     background: url(img/Top-Image_666x341.jpg);
     background-size: cover;
     position: relative;
 }
+
 /*LOGO*/
-#logotype{
+
+#logotype {
     position: absolute;
     width: 25vw;
     max-width: 100px;
-    left: 1vw;
+    left: 3vw;
 }
+
 /*DESKTOP NAV IS NOT DISPLAYED*/
-.desktopNav{
+
+.desktopNav {
     display: none;
 }
+
 /*/////////////////////////////////////////////////*/
+
 /*BURGER MENU ON MOBILE////////////////////////////////////////*/
+
 .bar1,
 .bar2,
 .bar3 {
@@ -33,6 +43,7 @@ header{
     margin: 5px 0;
     transition: 0.4s;
 }
+
 .burger {
     cursor: pointer;
     right: 15px;
@@ -40,7 +51,9 @@ header{
     z-index: 4;
     animation: opacity 0.6s forwards;
 }
-.XBar1, .XBar2{
+
+.XBar1,
+.XBar2 {
     width: 32px;
     height: 3px;
     margin: 20px 10px;
@@ -48,16 +61,19 @@ header{
     background-color: lightgray;
     transform: rotate(-45deg);
 }
-.XBar2{
+
+.XBar2 {
     transform: rotate(45deg);
 }
-.XButton{
+
+.XButton {
     position: absolute;
     cursor: pointer;
     height: 43px;
     width: 50px;
 
 }
+
 .menuList {
     list-style-type: none;
     position: absolute;
@@ -71,104 +87,136 @@ header{
     margin: 0;
     padding: 0;
 }
-.liItem{
+
+.liItem {
     margin: 35px 20px;
     text-align: right;
+    font-family: 'Hind', sans-serif;
 }
-.menuList li:nth-child(2){
+
+.menuList li:nth-child(2) {
     margin-top: 60px;
     animation: opacity 0.7s forwards;
 }
-.menuList li:nth-child(3){
+
+.menuList li:nth-child(3) {
     animation: opacity 0.8s forwards;
 }
-.menuList li:nth-child(4){
+
+.menuList li:nth-child(4) {
     animation: opacity 0.9s forwards;
 }
-.menuList li:nth-child(5){
+
+.menuList li:nth-child(5) {
     animation: opacity 1.1s forwards;
 }
-.currentItem{
+
+.currentItem {
     color: white;
     font-weight: 600;
     padding-right: 20px;
     border-right: 2px white solid;
     margin-right: 0px;
 }
+
 /*BURGER MENU ANIMATIONS////////////*/
-.menuSlide{
+
+.menuSlide {
     animation: menuSlide 0.4s forwards;
 }
-.menuSlideClose{
+
+.menuSlideClose {
     animation: menuSlideClose 0.4s forwards;
 }
-@keyframes menuSlide{
-    from{
+
+@keyframes menuSlide {
+    from {
         width: 0px;
     }
-    to{
+    to {
         width: 155px;
     }
 }
-@keyframes menuSlideClose{
-    from{
+
+@keyframes menuSlideClose {
+    from {
         width: 155px;
     }
-    to{
+    to {
         width: 0px;
     }
 }
-@keyframes opacity{
-    from{
+
+@keyframes opacity {
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
-    }
+}
+
 /*///////////////////////////////////////////////*/
+
 /*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
-.videos{
+
+.videos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
 }
-.videos div{
-    margin: 40px auto;
-    width: 200px;
-    height: 100px;
+
+.videos div {
+    margin: 20px auto;
+    width: 220px;
+    height: 123.75px;
     border: solid;
     background: white;
 }
+
 /*BREAKPOINT///////////////////////////////////*/
-@media only screen and (min-width:666px){
-   /* HEADER STUFF*/
-    header{
+
+@media only screen and (min-width:666px) {
+    /* HEADER STUFF*/
+    header {
         height: 100px;
         background: white;
     }
-    .burger{
+    .burger {
         display: none;
     }
-    .desktopNav{
+    .desktopNav {
         display: inherit;
         position: absolute;
-        right: 7vw;
+        right: 5vw;
         top: 40px;
         font-weight: 600;
-     }
-    .desktopNav a:nth-child(-n+3){
-        margin-right: 5vw;
+        font-family: 'Hind', sans-serif;
+        cursor: default;
     }
-    .currentItem{
-    color: black;
-    font-weight: 700;
-    padding-right: 0;
-    border-right: none;
-    border-bottom: 3px #65256A solid;
-    padding-bottom: 10px;
+    .desktopNav a {
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .currentItem {
+        color: black;
+        font-weight: 700;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 3px #65256A solid;
+    }
+    /*VIDEO PLACEHOLDERS RESIZE*/
+    .videos {
+        grid-template-columns: repeat(auto-fill, minmax(530px, auto));
+    }
+    .videos div {
+        width: 500px;
+        height: 281.25px;
+    }
 }
-}
+
 /*////////////////////////CLASS FOR NO DISPLAY*/
-.dontDisplay{
+
+.dontDisplay {
     display: none;
 }
