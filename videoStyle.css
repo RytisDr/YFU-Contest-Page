@@ -165,14 +165,45 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
 }
 
-.videos div {
+
+.videos div:nth-child(1){
+    background: url(img/Group-of-girls_500x281.jpg);
+}
+.videos div:nth-child(2){
+    background: url(img/backs-with-slogan_500x281.jpg);
+}
+.videos div:nth-child(3){
+    background: url(img/bonfire_500x281.jpg);
+}
+.videos div:nth-child(4){
+    background: url(img/holding-flags_500x281.jpg);
+}
+.videos div:nth-child(5){
+    background: url(img/human-chain_500x281.jpg);
+}
+.videos div:nth-child(6){
+    background: url(img/Laura-with-children_500x281.jpg);
+}
+.videos div:nth-child(7){
+    background: url(img/students-on-the-beach_500x281.jpg);
+}
+.videos div:nth-child(8){
+    background: url(img/Top-Image_666x341.jpg);
+}
+.videos div:nth-child(9){
+    background: url(img/water-ski_500x281.jpg);
+}
+.videos div:nth-child(10){
+    background: url(img/window_500x281.jpg);
+}
+.videos div{
     margin: 20px auto;
     width: 220px;
     height: 123.75px;
-    border: solid;
-    background: white;
 }
-
+.videos div:nth-child(-n+10){
+    background-size: contain;
+}
 /*BREAKPOINT///////////////////////////////////*/
 
 @media only screen and (min-width:666px) {
@@ -192,9 +223,10 @@ header {
         font-weight: 600;
         font-family: 'Hind', sans-serif;
         cursor: default;
+        font-size: 17pt;
     }
     .desktopNav a {
-        padding: 10px 20px;
+        padding: 10px 2vw;
         cursor: pointer;
         margin: 10px;
     }
