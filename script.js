@@ -42,7 +42,7 @@ function drawsTaskIcons() {
 
 function drawsFooterIcons() {
 
-    if (document.body.scrollTop > 1280 || document.documentElement.scrollTop > 1280) {
+    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
 
@@ -56,7 +56,7 @@ function drawsFooterIcons() {
 
 function desctopTaskIcons() {
 
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
 
@@ -70,7 +70,7 @@ function desctopTaskIcons() {
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 1280 || document.documentElement.scrollTop > 1280) {
+    if (document.body.scrollTop > 3100 || document.documentElement.scrollTop > 3100) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
 
