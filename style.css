@@ -286,7 +286,7 @@
             stroke-dashoffset: 0;
         }
     }
-    /*//////////////////BreakDown///desktop style FOR frontpage/////////////////////*/
+    /*//////////////////BreakDOWN///desktop style FOR frontpage/////////////////////*/
 
     @media only screen and (min-width: 666px) {
         header {
@@ -323,16 +323,16 @@
             position: absolute;
             width: 20vw;
             max-width: 200px;
-            left: 5vw;
+            left: 10vw;
         }
         #slogan {
             position: absolute;
-            left: 19vw;
+            left: 23vw;
             top: 15.5vh;
         }
         #slogan p {
             margin: 10px auto;
-            font-size: 2.5vw;
+            font-size: 2.1vw;
         }
         #line {
             height: 4px;
@@ -342,24 +342,23 @@
         }
         .tasks h1,
         h2 {
-            font-size: 2vw;
-            ;
-        }
-        #instructions p {
-            font-size: 1.2vw
+            font-size: 1.8vw;
         }
         svg {
-            width: 10em;
+            width: 8em;
+        }
+        #instructions p {
+            font-size: 1vw
         }
         #instructions {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 40% 60%;
             grid-column-gap: 10px;
-            margin: auto 5vw;
+            margin: auto 10vw;
         }
         #instructions img {
             display: block;
-            width: 50vw;
+            width: 40vw;
         }
         video {
             width: 60vw;
@@ -377,19 +376,19 @@
         #reference-map {
             display: grid;
             grid-template-columns: 3fr 1fr;
-            margin: 70px 5vw 0px 5vw;
+            margin: 70px 10vw 0px 10vw;
         }
         #reference {
             display: block;
             grid-column-start: 2;
-            margin-top: 220px;
+            margin-top: 150px;
             margin-right: 150px
         }
         #reference p {
-            font-size: 1.1vw;
+            font-size: 1vw;
         }
         #map {
-            width: 65vw;
+            width: 55vw;
         }
         #heading-map {
             grid-column-start: 1;
@@ -406,8 +405,8 @@
         #footer {
             display: grid;
             grid-template-columns: 1fr 10px 1fr 10px 1fr;
-            grid-column-gap: 50px;
-            padding: 5vw;
+            grid-column-gap: 20px;
+            padding: 5vw 10vw;
             background: -webkit-linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
             /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
@@ -416,9 +415,7 @@
         .footer-text {
             display: grid;
             grid-template-columns: 1fr;
-            grid-column-gap: 5px;
             text-align: center;
-            margin: auto 30px;
         }
         .footer-text .svg-div {
             grid-row-start: 1;
@@ -426,16 +423,16 @@
         .footer-text h1 {
             grid-row-start: 2;
             grid-column-start: 1;
-            font-size: 1.6vw;
+            font-size: 1.5vw;
         }
         .footer-text p {
             grid-row-start: 3;
-            font-size: 1.2vw;
+            font-size: 1.1vw;
         }
         .dividing-line {
             width: 5px;
             height: 255px;
             background-color: darkgrey;
-            margin-top: 200px
+            margin-top: 200px;
         }
     }
