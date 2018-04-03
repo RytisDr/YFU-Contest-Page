@@ -9,6 +9,8 @@ video.addEventListener('ended', function () {
     video.load();
 });
 
+
+
 /*Function to start drawing icons at the certain scroll point*/
 
 const iconsInstructions = document.querySelectorAll("#instructions path, #instructions rect, #instructions circle, #instructions line");
@@ -31,27 +33,29 @@ function drawsTaskIcons() {
     if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
-
-        })
-    } else {
-        iconsInstructions.forEach(e => {
-            e.classList.remove("drawing");
+            console.log("instr mobile");
         })
     }
+    /*else {
+    iconsInstructions.forEach(e => {
+        e.classList.remove("drawing");
+    })
+}*/
 }
 
 function drawsFooterIcons() {
 
-    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
-
-        })
-    } else {
-        iconsFooter.forEach(e => {
-            e.classList.remove("drawing");
+            console.log("footer mobile");
         })
     }
+    /*else {
+    iconsFooter.forEach(e => {
+        e.classList.remove("drawing");
+    })
+}*/
 }
 
 function desctopTaskIcons() {
@@ -59,27 +63,30 @@ function desctopTaskIcons() {
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
-
-        })
-    } else {
-        iconsInstructions.forEach(e => {
-            e.classList.remove("drawing");
+            console.log("instr desctop");
         })
     }
+    /*else {
+    iconsInstructions.forEach(e => {
+        e.classList.remove("drawing");
+    })
+}*/
 }
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 3100 || document.documentElement.scrollTop > 3100) {
+    if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
+            console.log("footer desctop");
 
         })
-    } else {
-        iconsFooter.forEach(e => {
-            e.classList.remove("drawing");
-        })
     }
+    /*else {
+    iconsFooter.forEach(e => {
+        e.classList.remove("drawing");
+    })
+}*/
 }
 
 
