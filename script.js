@@ -120,4 +120,94 @@ xButton.addEventListener('click', function () {
         menuList.removeEventListener("animationend", closeMenu);
     })
 })
-/////////////////////////////////////////////////////////////
+////////////////Map and Pins///////////////////////
+const allPins = document.querySelectorAll("#map img");
+const pinParaguay = document.getElementById("pin-paraguay");
+const pinUsa = document.getElementById("pin-usa");
+const pinChile = document.getElementById("pin-chile");
+const pinChina = document.getElementById("pin-china");
+
+const imageKarlis = document.getElementById("image-karlis");
+const imageSanta = document.getElementById("image-santa");
+const imagePhilip = document.getElementById("image-philip");
+const imageSara = document.getElementById("image-sara");
+
+const textParaguay = document.getElementById("text-paraguay");
+const textUsa = document.getElementById("text-usa");
+const textChile = document.getElementById("text-chile");
+const textChina = document.getElementById("text-china");
+
+
+
+
+pinParaguay.addEventListener("click", function () {
+
+    imageKarlis.classList.remove("dontDisplay");
+    textParaguay.classList.remove("dontDisplay");
+    imageSara.classList.add("dontDisplay");
+    textUsa.classList.add("dontDisplay");
+    imagePhilip.classList.add("dontDisplay");
+    textChina.classList.add("dontDisplay");
+    imageSanta.classList.add("dontDisplay");
+    textChile.classList.add("dontDisplay");
+
+});
+pinUsa.addEventListener("click", function () {
+
+    imageSara.classList.remove("dontDisplay");
+    textUsa.classList.remove("dontDisplay");
+    imageKarlis.classList.add("dontDisplay");
+    textParaguay.classList.add("dontDisplay");
+    imagePhilip.classList.add("dontDisplay");
+    textChina.classList.add("dontDisplay");
+    imageSanta.classList.add("dontDisplay");
+    textChile.classList.add("dontDisplay");
+
+});
+pinChina.addEventListener("click", function () {
+
+    imagePhilip.classList.remove("dontDisplay");
+    textChina.classList.remove("dontDisplay");
+    imageKarlis.classList.add("dontDisplay");
+    textParaguay.classList.add("dontDisplay");
+    imageSara.classList.add("dontDisplay");
+    textUsa.classList.add("dontDisplay");
+    imageSanta.classList.add("dontDisplay");
+    textChile.classList.add("dontDisplay");
+
+});
+pinChile.addEventListener("click", function () {
+
+    imageSanta.classList.remove("dontDisplay");
+    textChile.classList.remove("dontDisplay");
+    imageKarlis.classList.add("dontDisplay");
+    textParaguay.classList.add("dontDisplay");
+    imagePhilip.classList.add("dontDisplay");
+    textChina.classList.add("dontDisplay");
+    imageSara.classList.add("dontDisplay");
+    textUsa.classList.add("dontDisplay");
+
+});
+
+
+
+
+/*
+pinParaguay.addEventListener("click", function () {
+    imageKarlis.classList.remove("dontDisplay");
+    textParaguay.classList.remove("dontDisplay");
+})
+pinUsa.addEventListener("click", function () {
+
+    imageSara.classList.remove("dontDisplay");
+    textUsa.classList.remove("dontDisplay");
+})
+pinChile.addEventListener("click", function () {
+    imageSanta.classList.remove("dontDisplay");
+    textChile.classList.remove("dontDisplay");
+})
+pinChina.addEventListener("click", function () {
+    imagePhilip.classList.remove("dontDisplay");
+    textChina.classList.remove("dontDisplay");
+})
+*/

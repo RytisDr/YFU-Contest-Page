@@ -252,12 +252,12 @@
                 left: 20%;
             }
 
-            #reference img:nth-child(1) {
-                width: 215px;
-            }
-
-            #reference img:nth-child(2) {
-                display: none;
+            #reference img {
+                width: 120px;
+                border-radius: 50%;
+                position: absolute;
+                left: 0px;
+                top: 20%
             }
 
             button {
@@ -268,8 +268,7 @@
                 border-radius: 15px;
                 height: 30px;
                 display: block;
-                margin: 0 auto;
-                outline: none;
+                margin: 20vh auto 0 auto;
             }
 
             #reference {
@@ -277,6 +276,12 @@
                 grid-template-columns: 1fr 2fr;
                 font-family: Lato;
                 text-align: center;
+                position: relative;
+                margin: 30px 10px;
+            }
+
+            #reference p {
+                position: absolute;
             }
             /*//////////////////The last section in the frontpage/////////////////////*/
 
@@ -406,25 +411,24 @@
                     background-color: transparent;
                 }
                 /*////Reference section for the desctop////////*/
-                #reference img:nth-child(2) {
-                    display: block;
-                    width: 350px;
-                    margin: 0 auto;
-                }
-                #reference img:nth-child(1) {
-                    display: none;
+                #reference img {
+                    width: 10vw;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 17%;
+                    top: 0%;
                 }
                 #reference-map {
                     display: grid;
                     grid-template-columns: 3fr 1fr;
-                    margin: 70px 10vw 0px 10vw;
-                    margin-bottom: 70px;
+                    margin: 70px 10vw 70px 10vw;
                 }
                 #reference {
-                    display: block;
                     grid-column-start: 2;
                     margin-top: 150px;
-                    margin-right: 150px
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1.5fr;
                 }
                 #reference p {
                     font-size: 1vw;
