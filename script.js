@@ -75,7 +75,7 @@ function desctopTaskIcons() {
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
+    if (document.body.scrollTop > 2280 || document.documentElement.scrollTop > 2280) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer desctop");
