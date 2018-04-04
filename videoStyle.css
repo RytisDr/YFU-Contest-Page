@@ -246,13 +246,14 @@ header {
     cursor: default;
     font-family: 'Lato';
 }
-.hearth{
+
+.heart{
     position: absolute;
     width: 15px;
     margin: auto 7px;
 }
 .likeClick{
-    animation: liked 0.3s;
+    animation: liked 0.2s;
 }
 @keyframes liked{
     to{
