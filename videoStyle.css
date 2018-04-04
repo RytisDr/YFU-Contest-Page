@@ -159,55 +159,107 @@ header {
 
 /*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
 
+#videoPage h1 {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 15pt;
+}
+
 .videos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
 }
-.videos div{
-    margin: 20px auto;
+
+.videos div {
+    margin: 30px auto;
     width: 220px;
     height: 123.75px;
     cursor: pointer;
-}
-.videos div:hover{
-    filter: none;
+    position: relative;
 }
 
-.videos div:nth-child(1){
-    background:  url(img/play-arrow_280x306.png), url(img/Group-of-girls_500x281.jpg);
+.videos div:nth-child(1) {
+    background: url(img/play-arrow_280x306.png), url(img/Group-of-girls_500x281.jpg);
 }
-.videos div:nth-child(2){
+
+.videos div:nth-child(2) {
     background: url(img/play-arrow_280x306.png), url(img/backs-with-slogan_500x281.jpg);
 }
-.videos div:nth-child(3){
+
+.videos div:nth-child(3) {
     background: url(img/play-arrow_280x306.png), url(img/bonfire_500x281.jpg);
 }
-.videos div:nth-child(4){
+
+.videos div:nth-child(4) {
     background: url(img/play-arrow_280x306.png), url(img/holding-flags_500x281.jpg);
 }
-.videos div:nth-child(5){
+
+.videos div:nth-child(5) {
     background: url(img/play-arrow_280x306.png), url(img/human-chain_500x281.jpg);
 }
-.videos div:nth-child(6){
+
+.videos div:nth-child(6) {
     background: url(img/play-arrow_280x306.png), url(img/Laura-with-children_500x281.jpg);
 }
-.videos div:nth-child(7){
+
+.videos div:nth-child(7) {
     background: url(img/play-arrow_280x306.png), url(img/students-on-the-beach_500x281.jpg);
 }
-.videos div:nth-child(8){
+
+.videos div:nth-child(8) {
     background: url(img/play-arrow_280x306.png), url(img/Top-Image_666x341.jpg);
 }
-.videos div:nth-child(9){
+
+.videos div:nth-child(9) {
     background: url(img/play-arrow_280x306.png), url(img/water-ski_500x281.jpg);
 }
-.videos div:nth-child(10){
-    background-image:url(img/play-arrow_280x306.png), url(img/window_500x281.jpg);
+
+.videos div:nth-child(10) {
+    background-image: url(img/play-arrow_280x306.png), url(img/window_500x281.jpg);
 }
 
-.videos div:nth-child(-n+10){
-    background-size: 80px, cover;
+.videos div:nth-child(-n+10) {
+    background-size: 30px, cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.likeButton {
+    position: relative;
+    top: 125px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-family: 'Lato';
+    background-color: #8883E9;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 12px;
+    border-radius: 7px;
+}
+.videos div p{
+    position: absolute;
+    right: 0;
+    top: 124px;
+    margin: 5px auto;
+    cursor: default;
+    font-family: 'Lato';
+}
+.hearth{
+    position: absolute;
+    width: 15px;
+    margin: auto 7px;
+}
+.likeClick{
+    animation: liked 0.3s;
+}
+@keyframes liked{
+    to{
+        width: 25px;
+        opacity: 0;
+        transform: translate(-4px, -4px);
+    }
 }
 /*BREAKPOINT///////////////////////////////////*/
 
@@ -223,7 +275,7 @@ header {
     .desktopNav {
         display: inherit;
         position: absolute;
-        right: 5vw;
+        right: 10vw;
         top: 40px;
         font-weight: 600;
         font-family: 'Hind', sans-serif;
@@ -231,9 +283,12 @@ header {
         font-size: 17pt;
     }
     .desktopNav a {
-        padding: 10px 2vw;
+        padding: 10px 0.5vwvw;
         cursor: pointer;
         margin: 10px;
+    }
+    #logotype {
+        margin-left: 10vw;
     }
     .currentItem {
         color: black;
@@ -242,6 +297,7 @@ header {
         border-right: none;
         border-bottom: 3px #65256A solid;
     }
+
     /*VIDEO PLACEHOLDERS RESIZE*/
     .videos {
         grid-template-columns: repeat(auto-fill, minmax(530px, auto));
@@ -249,6 +305,9 @@ header {
     .videos div {
         width: 500px;
         height: 281.25px;
+    }
+    .videos div:nth-child(-n+10) {
+        background-size: 80px, cover;
     }
 }
 
