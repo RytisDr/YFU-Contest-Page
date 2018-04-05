@@ -20,6 +20,7 @@
             #logo {
                 width: 15vw;
                 max-width: 100px;
+                left: 15px;
             }
             /*//////////////////slogan for the frontpage/////////////////////*/
 
@@ -176,6 +177,10 @@
             }
             /*//////////////////Instructions section in the frontpage/////////////////////*/
 
+            #instructions {
+                margin: auto 10px;
+            }
+
             #instructions img {
                 display: none;
             }
@@ -202,10 +207,10 @@
 
             video {
                 width: 90vw;
+                min-height: 220px;
                 display: block;
                 margin: 0 auto;
                 cursor: pointer;
-                background-color: transparent;
             }
 
             h2 {
@@ -216,14 +221,14 @@
             /*//////////////////Refference section in the frontpage/////////////////////*/
 
             #map {
-                width: 400px;
-                height: 270px;
-                background-size: contain;
-                background-image: url(images/map.png);
-                background-repeat: no-repeat;
+                width: 90%;
                 position: relative;
                 display: block;
                 margin: 0 auto;
+            }
+
+            #map img:first-child {
+                width: 100%;
             }
 
             .pin {
@@ -232,24 +237,24 @@
                 cursor: pointer;
             }
 
-            #map .pin:first-child {
-                top: 45%;
+            #map img:nth-child(2) {
+                top: 49%;
                 left: 32%;
             }
 
-            #map .pin:nth-child(3) {
+            #map img:nth-child(3) {
+                top: 27%;
+                left: 20%;
+            }
+
+            #map img:nth-child(4) {
                 top: 62%;
                 left: 28%;
             }
 
-            #map .pin:nth-child(4) {
-                top: 25%;
-                left: 69%;
-            }
-
-            #map .pin:nth-child(2) {
-                top: 20%;
-                left: 20%;
+            #map img:nth-child(5) {
+                top: 30%;
+                left: 70%;
             }
 
             #reference img {
@@ -290,8 +295,7 @@
                 /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                padding-top: 50px;
-                padding-bottom: 50px;
+                padding: 50px 10px;
                 color: white;
             }
             /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
@@ -434,12 +438,11 @@
                     font-size: 1vw;
                 }
                 #map {
-                    width: 1100px;
-                    height: 650px;
-                    background-size: contain;
-                    background-image: url(images/map.png);
-                    background-repeat: no-repeat;
                     position: relative;
+                    width: 100%;
+                }
+                #map img:first-child {
+                    width: 100%;
                 }
                 .pin {
                     position: absolute;
@@ -449,21 +452,21 @@
                 .pin:hover {
                     height: 150px;
                 }
-                #map .pin:first-child {
-                    top: 390px;
-                    left: 355px;
+                #map img:nth-child(2) {
+                    top: 55%;
+                    left: 30%;
                 }
-                #map .pin:nth-child(3) {
-                    top: 440px;
-                    left: 305px;
+                #map img:nth-child(3) {
+                    top: 37%;
+                    left: 20%;
                 }
-                #map .pin:nth-child(4) {
-                    top: 235px;
-                    left: 735px;
+                #map img:nth-child(4) {
+                    top: 70%;
+                    left: 29%;
                 }
-                #map .pin:nth-child(2) {
-                    top: 195px;
-                    left: 240px;
+                #map img:nth-child(5) {
+                    top: 38%;
+                    left: 71%;
                 }
                 #heading-map {
                     grid-column-start: 1;

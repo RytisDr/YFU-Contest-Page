@@ -45,7 +45,7 @@ function drawsTaskIcons() {
 
 function drawsFooterIcons() {
 
-    if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer mobile");
@@ -121,7 +121,7 @@ xButton.addEventListener('click', function () {
     })
 })
 ////////////////Map and Pins///////////////////////
-const allPins = document.querySelectorAll("#map img");
+
 const pinParaguay = document.getElementById("pin-paraguay");
 const pinUsa = document.getElementById("pin-usa");
 const pinChile = document.getElementById("pin-chile");
@@ -189,25 +189,4 @@ pinChile.addEventListener("click", function () {
 
 });
 
-
-
-
-/*
-pinParaguay.addEventListener("click", function () {
-    imageKarlis.classList.remove("dontDisplay");
-    textParaguay.classList.remove("dontDisplay");
-})
-pinUsa.addEventListener("click", function () {
-
-    imageSara.classList.remove("dontDisplay");
-    textUsa.classList.remove("dontDisplay");
-})
-pinChile.addEventListener("click", function () {
-    imageSanta.classList.remove("dontDisplay");
-    textChile.classList.remove("dontDisplay");
-})
-pinChina.addEventListener("click", function () {
-    imagePhilip.classList.remove("dontDisplay");
-    textChina.classList.remove("dontDisplay");
-})
-*/
+const allPins = document.querySelectorAll(".pin")
