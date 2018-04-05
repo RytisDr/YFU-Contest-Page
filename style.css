@@ -357,7 +357,7 @@
                     height: 65vh;
                     background-color: white;
                     display: block;
-                    margin: 0 auto;
+                    margin: 77px auto;
                 }
 
                 .contact-title {
@@ -374,6 +374,7 @@
 
                 #logo-apply {
                     width: 100px;
+                    margin-right: 450px;
                 }
 
                 .contact-title h2 {
@@ -381,8 +382,13 @@
                     font-family: Lato;
                 }
 
+                textarea {
+                    font-family: Lato;
+                    font-size: 20px;
+                }
+
                 form {
-                    margin: 50px;
+                    margin-top: 50px;
                 }
 
                 .form-control {
@@ -427,6 +433,7 @@
                 .upload-btn-wrapper {
                     position: relative;
                     overflow: hidden;
+                    display: inline-block;
                 }
 
                 .btn {
