@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form YFU </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body id="body-apply">
+
+    <div class="desktopNav">
+        <a href="index.html">HOME</a>
+        <a class="currentItem" href="apply.html">APPLY</a>
+        <a href="videos.html">VIDEOS</a>
+        <a>ABOUT YFU</a>
+    </div>
+    <div class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <ul class="menuList dontDisplay">
+        <div class="XButton dontDisplay">
+            <div class="XBar1"></div>
+            <div class="XBar2"></div>
+        </div>
+        <li class="liItem dontDisplay currentItem">HOME</li>
+        <li class="liItem dontDisplay">APPLY</li>
+        <li class="liItem dontDisplay ">VIDEOS</li>
+        <li class="liItem dontDisplay">ABOUT YFU</li>
+    </ul>
+    <div id="form">
+        <img id="logo-apply" src="images/logo_220x220.png">
+        <div class="contact-title">
+
+            <h1>Sign up for YFU Contest!</h1>
+        </div>
+
+        <div class="contact-form">
+
+            <form id="contact-form" method="post" action="contact-form.php">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+
+                <br>
+                <div class="upload-btn-wrapper">
+                    <button class="btn">Upload a file</button>
+                    <input name="video" type="file" class="form-control" id="video" accept="video/*" required>
+                </div>
+                <br>
+                <input type="submit" class="form-control submit" value="SUBMIT">
+
+
+
+            </form>
+        </div>
+    </div>

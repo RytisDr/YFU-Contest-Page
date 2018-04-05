@@ -45,7 +45,7 @@ function drawsTaskIcons() {
 
 function drawsFooterIcons() {
 
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if (document.body.scrollTop > 777 || document.documentElement.scrollTop > 777) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer mobile");
@@ -60,7 +60,7 @@ function drawsFooterIcons() {
 
 function desctopTaskIcons() {
 
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > 444 || document.documentElement.scrollTop > 444) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
             console.log("instr desctop");
@@ -75,7 +75,7 @@ function desctopTaskIcons() {
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 2280 || document.documentElement.scrollTop > 2280) {
+    if (document.body.scrollTop > 2090 || document.documentElement.scrollTop > 2090) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer desctop");
@@ -122,71 +122,63 @@ xButton.addEventListener('click', function () {
 })
 ////////////////Map and Pins///////////////////////
 
-const pinParaguay = document.getElementById("pin-paraguay");
-const pinUsa = document.getElementById("pin-usa");
-const pinChile = document.getElementById("pin-chile");
-const pinChina = document.getElementById("pin-china");
+
 
 const imageKarlis = document.getElementById("image-karlis");
 const imageSanta = document.getElementById("image-santa");
 const imagePhilip = document.getElementById("image-philip");
 const imageSara = document.getElementById("image-sara");
-
 const textParaguay = document.getElementById("text-paraguay");
 const textUsa = document.getElementById("text-usa");
 const textChile = document.getElementById("text-chile");
 const textChina = document.getElementById("text-china");
 
+const allPins = document.querySelectorAll(".pin");
+allPins.forEach(function (pin) {
+    pin.addEventListener('click', function () {
+        if (pin == allPins[0]) {
+            imageKarlis.classList.remove("dontDisplay");
+            textParaguay.classList.remove("dontDisplay");
+            imageSara.classList.add("dontDisplay");
+            textUsa.classList.add("dontDisplay");
+            imagePhilip.classList.add("dontDisplay");
+            textChina.classList.add("dontDisplay");
+            imageSanta.classList.add("dontDisplay");
+            textChile.classList.add("dontDisplay");
+        }
 
+        if (pin == allPins[1]) {
+            imageSara.classList.remove("dontDisplay");
+            textUsa.classList.remove("dontDisplay");
+            imageKarlis.classList.add("dontDisplay");
+            textParaguay.classList.add("dontDisplay");
+            imagePhilip.classList.add("dontDisplay");
+            textChina.classList.add("dontDisplay");
+            imageSanta.classList.add("dontDisplay");
+            textChile.classList.add("dontDisplay");
+        }
 
+        if (pin == allPins[3]) {
+            imagePhilip.classList.remove("dontDisplay");
+            textChina.classList.remove("dontDisplay");
+            imageKarlis.classList.add("dontDisplay");
+            textParaguay.classList.add("dontDisplay");
+            imageSara.classList.add("dontDisplay");
+            textUsa.classList.add("dontDisplay");
+            imageSanta.classList.add("dontDisplay");
+            textChile.classList.add("dontDisplay");
+        }
 
-pinParaguay.addEventListener("click", function () {
+        if (pin == allPins[2]) {
+            imageSanta.classList.remove("dontDisplay");
+            textChile.classList.remove("dontDisplay");
+            imageKarlis.classList.add("dontDisplay");
+            textParaguay.classList.add("dontDisplay");
+            imagePhilip.classList.add("dontDisplay");
+            textChina.classList.add("dontDisplay");
+            imageSara.classList.add("dontDisplay");
+            textUsa.classList.add("dontDisplay");
+        }
 
-    imageKarlis.classList.remove("dontDisplay");
-    textParaguay.classList.remove("dontDisplay");
-    imageSara.classList.add("dontDisplay");
-    textUsa.classList.add("dontDisplay");
-    imagePhilip.classList.add("dontDisplay");
-    textChina.classList.add("dontDisplay");
-    imageSanta.classList.add("dontDisplay");
-    textChile.classList.add("dontDisplay");
-
-});
-pinUsa.addEventListener("click", function () {
-
-    imageSara.classList.remove("dontDisplay");
-    textUsa.classList.remove("dontDisplay");
-    imageKarlis.classList.add("dontDisplay");
-    textParaguay.classList.add("dontDisplay");
-    imagePhilip.classList.add("dontDisplay");
-    textChina.classList.add("dontDisplay");
-    imageSanta.classList.add("dontDisplay");
-    textChile.classList.add("dontDisplay");
-
-});
-pinChina.addEventListener("click", function () {
-
-    imagePhilip.classList.remove("dontDisplay");
-    textChina.classList.remove("dontDisplay");
-    imageKarlis.classList.add("dontDisplay");
-    textParaguay.classList.add("dontDisplay");
-    imageSara.classList.add("dontDisplay");
-    textUsa.classList.add("dontDisplay");
-    imageSanta.classList.add("dontDisplay");
-    textChile.classList.add("dontDisplay");
-
-});
-pinChile.addEventListener("click", function () {
-
-    imageSanta.classList.remove("dontDisplay");
-    textChile.classList.remove("dontDisplay");
-    imageKarlis.classList.add("dontDisplay");
-    textParaguay.classList.add("dontDisplay");
-    imagePhilip.classList.add("dontDisplay");
-    textChina.classList.add("dontDisplay");
-    imageSara.classList.add("dontDisplay");
-    textUsa.classList.add("dontDisplay");
-
-});
-
-const allPins = document.querySelectorAll(".pin")
+    });
+})
