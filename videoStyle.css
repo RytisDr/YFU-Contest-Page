@@ -224,7 +224,7 @@ header {
     background-position: center;
 }
 
-.likeButton {
+.likeButton, .shareButton {
     position: relative;
     top: 125px;
     width: 70px;
@@ -237,6 +237,16 @@ header {
     text-align: left;
     padding-left: 12px;
     border-radius: 7px;
+}
+.shareButton{
+    position: absolute;
+    background-color: #62d5f2;
+    color: black;
+}
+.shareIcon{
+    position: absolute;
+    width: 13px;
+    margin: 2px 5px;
 }
 .videos div p{
     position: absolute;
@@ -309,6 +319,9 @@ header {
     }
     .videos div:nth-child(-n+10) {
         background-size: 80px, cover;
+    }
+    .likeButton, .shareButton, .videos div p{
+        top: 282px;
     }
 }
 

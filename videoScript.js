@@ -32,20 +32,23 @@ xButton.addEventListener('click', function () {
 /////////////////////////////////////////////////////////////
 /////////////////////////////// LIKE VIDEO FUNCTIONS////////////////////////////////////////
 let likeNumber = 0;
+let clicks = {};
 let likeNrSpace = document.querySelectorAll(".videos div p span");
 const likeButtons = document.querySelectorAll(".likeButton").forEach(function (elem) {
     elem.addEventListener('click', liked);
 });
 
 function liked(e) {
-
-    countLikes(e);
     e.currentTarget.querySelector(".heart").classList.add("likeClick");
+    e.currentTarget.querySelector(".heart").append(e.currentTarget.id);
     e.currentTarget.querySelector(".heart").addEventListener('animationend', function (e) {
         e.currentTarget.classList.remove("likeClick");
-    });
-    function countLikes(e){
-        likeNumber++;
-        likeNrSpace[0].innerHTML = likeNumber;
+    })
+
+    likeNumber++;
+    let nr = e.currentTarget.id-1;
+    likeNrSpace[nr].innerHTML = likeNumber + " ";
+    if(likeNumber>0){
+        likeNumber=0;
     }
-}
+};
