@@ -10,7 +10,7 @@
 
 header {
     height: 275px;
-    background: url(img/Top-Image_666x341.jpg);
+    background: url(images/top-img_666x444.png);
     background-size: cover;
     position: relative;
 }
@@ -194,43 +194,43 @@ a:visited {
 }
 
 .videos div:nth-child(1) {
-    background: url(img/play-arrow_280x306.png), url(img/Group-of-girls_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/Group-of-girls_500x281.jpg);
 }
 
 .videos div:nth-child(2) {
-    background: url(img/play-arrow_280x306.png), url(img/backs-with-slogan_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/backs-with-slogan_500x281.jpg);
 }
 
 .videos div:nth-child(3) {
-    background: url(img/play-arrow_280x306.png), url(img/bonfire_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/bonfire_500x281.jpg);
 }
 
 .videos div:nth-child(4) {
-    background: url(img/play-arrow_280x306.png), url(img/holding-flags_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/holding-flags_500x281.jpg);
 }
 
 .videos div:nth-child(5) {
-    background: url(img/play-arrow_280x306.png), url(img/human-chain_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/human-chain_500x281.jpg);
 }
 
 .videos div:nth-child(6) {
-    background: url(img/play-arrow_280x306.png), url(img/Laura-with-children_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/Laura-with-children_500x281.jpg);
 }
 
 .videos div:nth-child(7) {
-    background: url(img/play-arrow_280x306.png), url(img/students-on-the-beach_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/students-on-the-beach_500x281.jpg);
 }
 
 .videos div:nth-child(8) {
-    background: url(img/play-arrow_280x306.png), url(img/Top-Image_666x341.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/top-img_666x444.png);
 }
 
 .videos div:nth-child(9) {
-    background: url(img/play-arrow_280x306.png), url(img/water-ski_500x281.jpg);
+    background: url(images/play-arrow_280x306.png), url(images/water-ski_500x281.jpg);
 }
 
 .videos div:nth-child(10) {
-    background-image: url(img/play-arrow_280x306.png), url(img/window_500x281.jpg);
+    background-image: url(images/play-arrow_280x306.png), url(images/window_500x281.jpg);
 }
 
 .videos div:nth-child(-n+10) {
@@ -332,7 +332,7 @@ a:visited {
         border-bottom: 3px #65256A solid;
     }
     #videoPage h1 {
-        font-size: 25pt;
+        font-size: 1.8vw;
         color: #6565c0;
     }
     /*VIDEO PLACEHOLDERS RESIZE*/
