@@ -4,6 +4,10 @@
                     overflow-x: hidden;
                 }
 
+                html {
+                    overflow-y: scroll;
+                }
+
                 p {
                     font-family: Lato;
                     font-size: 3.5vw;
@@ -374,7 +378,7 @@
 
                 #logo-apply {
                     width: 100px;
-                    margin-right: 450px;
+                    margin-right: 666px;
                 }
 
                 .contact-title h2 {
@@ -470,15 +474,15 @@
                     .desktopNav {
                         display: inherit;
                         position: absolute;
-                        right: 10vw;
+                        right: 5vw;
                         top: 40px;
                         font-weight: 600;
-                        font-family: 'Hind', sans-serif;
+                        font-family: 'Lato', sans-serif;
                         cursor: default;
                         font-size: 17pt;
                     }
                     .desktopNav a {
-                        padding: 10px 20px;
+                        padding: 10px 10px;
                         cursor: pointer;
                         margin: 10px;
                     }

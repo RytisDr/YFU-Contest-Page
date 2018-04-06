@@ -35,12 +35,12 @@ function drawsTaskIcons() {
             e.classList.add("drawing");
             console.log("instr mobile");
         })
+    } else {
+        iconsInstructions.forEach(e => {
+            e.classList.remove("drawing");
+            console.log("gone");
+        })
     }
-    /*else {
-    iconsInstructions.forEach(e => {
-        e.classList.remove("drawing");
-    })
-}*/
 }
 
 function drawsFooterIcons() {
@@ -60,33 +60,32 @@ function drawsFooterIcons() {
 
 function desctopTaskIcons() {
 
-    if (document.body.scrollTop > 444 || document.documentElement.scrollTop > 444) {
+    if (document.body.scrollTop > 444 || document.documentElement.scrollTop > 244) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
             console.log("instr desctop");
         })
+    } else {
+        iconsInstructions.forEach(e => {
+            e.classList.remove("drawing");
+            console.log("gone");
+        })
     }
-    /*else {
-    iconsInstructions.forEach(e => {
-        e.classList.remove("drawing");
-    })
-}*/
 }
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 2090 || document.documentElement.scrollTop > 2090) {
+    if (document.body.scrollTop > 2350 || document.documentElement.scrollTop > 1900) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer desctop");
 
         })
+    } else {
+        iconsFooter.forEach(e => {
+            e.classList.remove("drawing");
+        })
     }
-    /*else {
-    iconsFooter.forEach(e => {
-        e.classList.remove("drawing");
-    })
-}*/
 }
 
 
