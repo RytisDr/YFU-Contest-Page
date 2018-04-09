@@ -2,13 +2,14 @@
 
 
 /*Event listener for the video in the index page*/
+if(window.location.pathname.includes("index.html")){
 const video = document.getElementById("contest-video");
 
 video.addEventListener('ended', function () {
     video.currentTime = 0;
     video.load();
 });
-
+}
 
 
 /*Function to start drawing icons at the certain scroll point*/
@@ -181,3 +182,26 @@ allPins.forEach(function (pin) {
 
     });
 })
+
+/////////////////////////////// LIKE VIDEO FUNCTIONS////////////////////////////////////////
+let likeNumber = 0;
+let clicks = {};
+let likeNrSpace = document.querySelectorAll(".videos div p span");
+const likeButtons = document.querySelectorAll(".likeButton").forEach(function (elem) {
+    elem.addEventListener('click', liked);
+});
+
+function liked(e) {
+    e.currentTarget.querySelector(".heart").classList.add("likeClick");
+    e.currentTarget.querySelector(".heart").append(e.currentTarget.id);
+    e.currentTarget.querySelector(".heart").addEventListener('animationend', function (e) {
+        e.currentTarget.classList.remove("likeClick");
+    })
+
+    likeNumber++;
+    let nr = e.currentTarget.id-1;
+    likeNrSpace[nr].innerHTML = likeNumber + " ";
+    if(likeNumber>0){
+        likeNumber=0;
+    }
+};
