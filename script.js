@@ -30,7 +30,7 @@ window.onscroll = function () {
 
 function drawsTaskIcons() {
 
-    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+    if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
         iconsInstructions.forEach(e => {
             e.classList.add("drawing");
             console.log("instr mobile");
@@ -45,17 +45,16 @@ function drawsTaskIcons() {
 
 function drawsFooterIcons() {
 
-    if (document.body.scrollTop > 777 || document.documentElement.scrollTop > 777) {
+    if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer mobile");
         })
+    } else {
+        iconsFooter.forEach(e => {
+            e.classList.remove("drawing");
+        })
     }
-    /*else {
-    iconsFooter.forEach(e => {
-        e.classList.remove("drawing");
-    })
-}*/
 }
 
 function desctopTaskIcons() {
@@ -75,15 +74,16 @@ function desctopTaskIcons() {
 
 function desctopFooterIcons() {
 
-    if (document.body.scrollTop > 2350 || document.documentElement.scrollTop > 1900) {
+    if (document.body.scrollTop > 2170 || document.documentElement.scrollTop > 2170) {
         iconsFooter.forEach(e => {
             e.classList.add("drawing");
             console.log("footer desctop");
 
         })
-    } else {
+    } else if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
         iconsFooter.forEach(e => {
             e.classList.remove("drawing");
+            console.log("disappear");
         })
     }
 }
@@ -136,6 +136,7 @@ const allPins = document.querySelectorAll(".pin");
 allPins.forEach(function (pin) {
     pin.addEventListener('click', function () {
         if (pin == allPins[0]) {
+
             imageKarlis.classList.remove("dontDisplay");
             textParaguay.classList.remove("dontDisplay");
             imageSara.classList.add("dontDisplay");
