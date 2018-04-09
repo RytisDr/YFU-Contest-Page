@@ -1,75 +1,6 @@
 html,
 body {
     margin: 0;
-<<<<<<< HEAD
-    overflow-x: hidden;
-}
-
-html {
-    overflow-y: scroll;
-}
-
-p {
-    font-family: Lato;
-    font-size: 3.5vw;
-}
-
-
-/*//////////////////Header for the home page/////////////////////*/
-
-header {
-    background-image: url(images/top-img_666x444.png);
-    height: 276px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#logo {
-    width: 15vw;
-    max-width: 100px;
-    left: 15px;
-}
-
-
-/*//////////////////slogan for the frontpage/////////////////////*/
-
-#slogan {
-    font-family: Lato;
-    font-size: 4vw;
-    position: absolute;
-    left: 19vw;
-    top: 45px;
-}
-
-#slogan p {
-    margin: 10px auto;
-}
-
-#line {
-    height: 2px;
-    width: 30vw;
-    background-color: #693074;
-}
-
-span {
-    color: #693074;
-}
-
-
-/*//////////////////Navigation Menu FOR frontpage/////////////////////*/
-
-.desktopNav {
-    display: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: inherit;
-}
-=======
 }
 
 #indexBody {
@@ -90,8 +21,8 @@ p {
     font-size: 3.5vw;
 }
 
+
 /*BURGER MENU ON MOBILE////////////////////////////////////////*/
->>>>>>> origin/master
 
 .bar1,
 .bar2,
@@ -152,10 +83,7 @@ p {
 .liItem {
     margin: 35px 20px;
     text-align: right;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> origin/master
 }
 
 .menuList li:nth-child(2) {
@@ -172,11 +100,7 @@ p {
 }
 
 .menuList li:nth-child(5) {
-<<<<<<< HEAD
-    animation: opacity 1.1s forwards;
-=======
     animation: opacity 1.3s forwards;
->>>>>>> origin/master
 }
 
 .currentItem {
@@ -187,11 +111,9 @@ p {
     margin-right: 7px;
 }
 
-<<<<<<< HEAD
-=======
+
 /*BURGER MENU ANIMATIONS////////////*/
 
->>>>>>> origin/master
 .menuSlide {
     animation: menuSlide 0.4s forwards;
 }
@@ -227,12 +149,7 @@ p {
     }
 }
 
-<<<<<<< HEAD
-.dontDisplay {
-    display: none;
-}
 
-=======
 /*//////////////////Header for the home page/////////////////////*/
 
 header {
@@ -240,15 +157,14 @@ header {
     background: url(images/top-img_666x444.png);
     background-size: cover;
     position: relative;
-
 }
-
 
 #logo {
     width: 15vw;
     max-width: 100px;
     left: 15px;
 }
+
 
 /*//////////////////slogan for the frontpage/////////////////////*/
 
@@ -274,6 +190,7 @@ span {
     color: #693074;
 }
 
+
 /*DESKTOP NAV, NOT DISPLAYED ON MOBILE*/
 
 .desktopNav {
@@ -284,7 +201,7 @@ a {
     text-decoration: none;
     color: black;
 }
->>>>>>> origin/master
+
 
 /*//////////////////Instructions section in the frontpage/////////////////////*/
 
@@ -334,10 +251,7 @@ h2 {
     text-align: center;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 /*//////////////////Refference section in the frontpage/////////////////////*/
 
 #map {
@@ -385,11 +299,7 @@ h2 {
     top: 20%
 }
 
-<<<<<<< HEAD
-button {
-=======
 #ref-button button {
->>>>>>> origin/master
     background-color: white;
     border: solid #62d5f2;
     color: #62d5f2;
@@ -414,10 +324,7 @@ button {
     margin-left: 10px;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 /*//////////////////The last section in the frontpage/////////////////////*/
 
 #footer {
@@ -429,10 +336,7 @@ button {
     color: white;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
 
 .svg-div {
@@ -464,10 +368,7 @@ line {
     }
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 /*//////////////////Styles FOR Apply page icons/////////////////////*/
 
 #body-apply {
@@ -583,11 +484,9 @@ form .submit:hover {
     width: 90px;
 }
 
-<<<<<<< HEAD
 
-/*//////////////////BreakDOWN///desktop style FOR frontpage/////////////////////*/
-=======
 /*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
+
 
 /*LOGO*/
 
@@ -721,20 +620,14 @@ form .submit:hover {
 }
 
 
-
 /*//////////////////MENTAL BreakDOWN FOR DESKTOP////////////////////////*/
->>>>>>> origin/master
 
 @media only screen and (min-width: 666px) {
     header {
         background-image: url(images/top-img_1242x828.png);
         height: 828px;
     }
-<<<<<<< HEAD
-    /*////menu for the desctop////////*/
-=======
     /*////menu for the desktop////////*/
->>>>>>> origin/master
     .burger {
         display: none;
     }
@@ -814,11 +707,7 @@ form .submit:hover {
     .tasks .svg-div {
         margin-top: 34px;
     }
-<<<<<<< HEAD
-    /*////Reference section for the desctop////////*/
-=======
     /*////Reference section for the desktop////////*/
->>>>>>> origin/master
     #reference img {
         width: 10vw;
         border-radius: 50%;
@@ -877,11 +766,7 @@ form .submit:hover {
         grid-column-start: 1;
         grid-row-start: 1;
     }
-<<<<<<< HEAD
-    button {
-=======
     #ref-button button {
->>>>>>> origin/master
         border: solid 3px;
         width: 200px;
         height: 45px;
@@ -893,11 +778,7 @@ form .submit:hover {
     #ref-button {
         position: relative;
     }
-<<<<<<< HEAD
-    /*////the last section for the desctop////////*/
-=======
     /*////the last section for the desktop////////*/
->>>>>>> origin/master
     #footer {
         display: grid;
         grid-template-columns: 1fr 10px 1fr 10px 1fr;
@@ -933,8 +814,6 @@ form .submit:hover {
         background-color: darkgrey;
         margin-top: 120px;
     }
-<<<<<<< HEAD
-=======
     /*VIDEO PAGE CONTENT */
     #videoHeader {
         height: 100px;
@@ -982,5 +861,4 @@ form .submit:hover {
 
 .dontDisplay {
     display: none;
->>>>>>> origin/master
 }
