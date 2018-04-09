@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0;
+<<<<<<< HEAD
     overflow-x: hidden;
 }
 
@@ -68,6 +69,29 @@ a {
 a:visited {
     color: inherit;
 }
+=======
+}
+
+#indexBody {
+    overflow-x: hidden;
+}
+
+#videoPage {
+    overflow-x: hidden;
+}
+
+#applyHtml {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: Lato;
+    font-size: 3.5vw;
+}
+
+/*BURGER MENU ON MOBILE////////////////////////////////////////*/
+>>>>>>> origin/master
 
 .bar1,
 .bar2,
@@ -128,6 +152,10 @@ a:visited {
 .liItem {
     margin: 35px 20px;
     text-align: right;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> origin/master
 }
 
 .menuList li:nth-child(2) {
@@ -144,7 +172,11 @@ a:visited {
 }
 
 .menuList li:nth-child(5) {
+<<<<<<< HEAD
     animation: opacity 1.1s forwards;
+=======
+    animation: opacity 1.3s forwards;
+>>>>>>> origin/master
 }
 
 .currentItem {
@@ -155,6 +187,11 @@ a:visited {
     margin-right: 7px;
 }
 
+<<<<<<< HEAD
+=======
+/*BURGER MENU ANIMATIONS////////////*/
+
+>>>>>>> origin/master
 .menuSlide {
     animation: menuSlide 0.4s forwards;
 }
@@ -190,10 +227,64 @@ a:visited {
     }
 }
 
+<<<<<<< HEAD
 .dontDisplay {
     display: none;
 }
 
+=======
+/*//////////////////Header for the home page/////////////////////*/
+
+header {
+    height: 275px;
+    background: url(images/top-img_666x444.png);
+    background-size: cover;
+    position: relative;
+
+}
+
+
+#logo {
+    width: 15vw;
+    max-width: 100px;
+    left: 15px;
+}
+
+/*//////////////////slogan for the frontpage/////////////////////*/
+
+#slogan {
+    font-family: Lato;
+    font-size: 4vw;
+    position: absolute;
+    left: 19vw;
+    top: 45px;
+}
+
+#slogan p {
+    margin: 10px auto;
+}
+
+#line {
+    height: 2px;
+    width: 30vw;
+    background-color: #693074;
+}
+
+span {
+    color: #693074;
+}
+
+/*DESKTOP NAV, NOT DISPLAYED ON MOBILE*/
+
+.desktopNav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+>>>>>>> origin/master
 
 /*//////////////////Instructions section in the frontpage/////////////////////*/
 
@@ -243,7 +334,10 @@ h2 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 /*//////////////////Refference section in the frontpage/////////////////////*/
 
 #map {
@@ -291,7 +385,11 @@ h2 {
     top: 20%
 }
 
+<<<<<<< HEAD
 button {
+=======
+#ref-button button {
+>>>>>>> origin/master
     background-color: white;
     border: solid #62d5f2;
     color: #62d5f2;
@@ -316,7 +414,10 @@ button {
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 /*//////////////////The last section in the frontpage/////////////////////*/
 
 #footer {
@@ -328,7 +429,10 @@ button {
     color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
 
 .svg-div {
@@ -360,7 +464,10 @@ line {
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 /*//////////////////Styles FOR Apply page icons/////////////////////*/
 
 #body-apply {
@@ -476,15 +583,158 @@ form .submit:hover {
     width: 90px;
 }
 
+<<<<<<< HEAD
 
 /*//////////////////BreakDOWN///desktop style FOR frontpage/////////////////////*/
+=======
+/*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
+
+/*LOGO*/
+
+#logotype {
+    position: absolute;
+    width: 25vw;
+    max-width: 100px;
+    left: 3vw;
+}
+
+#videoPage h1 {
+    text-align: center;
+    font-family: 'Lato';
+    color: #6565c0;
+    font-size: 13pt;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+}
+
+.videos div {
+    margin: 30px auto;
+    width: 220px;
+    height: 123.75px;
+    cursor: pointer;
+    position: relative;
+}
+
+.videos div:nth-child(1) {
+    background: url(images/play-arrow_280x306.png), url(images/Group-of-girls_500x281.jpg);
+}
+
+.videos div:nth-child(2) {
+    background: url(images/play-arrow_280x306.png), url(images/backs-with-slogan_500x281.jpg);
+}
+
+.videos div:nth-child(3) {
+    background: url(images/play-arrow_280x306.png), url(images/bonfire_500x281.jpg);
+}
+
+.videos div:nth-child(4) {
+    background: url(images/play-arrow_280x306.png), url(images/holding-flags_500x281.jpg);
+}
+
+.videos div:nth-child(5) {
+    background: url(images/play-arrow_280x306.png), url(images/human-chain_500x281.jpg);
+}
+
+.videos div:nth-child(6) {
+    background: url(images/play-arrow_280x306.png), url(images/Laura-with-children_500x281.jpg);
+}
+
+.videos div:nth-child(7) {
+    background: url(images/play-arrow_280x306.png), url(images/students-on-the-beach_500x281.jpg);
+}
+
+.videos div:nth-child(8) {
+    background: url(images/play-arrow_280x306.png), url(images/top-img_666x444.png);
+}
+
+.videos div:nth-child(9) {
+    background: url(images/play-arrow_280x306.png), url(images/water-ski_500x281.jpg);
+}
+
+.videos div:nth-child(10) {
+    background-image: url(images/play-arrow_280x306.png), url(images/window_500x281.jpg);
+}
+
+.videos div:nth-child(-n+10) {
+    background-size: 30px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.likeButton,
+.shareButton {
+    position: relative;
+    top: 125px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-family: 'Lato';
+    background-color: #8883E9;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 12px;
+    border-radius: 7px;
+}
+
+.shareButton {
+    position: absolute;
+    background-color: #62d5f2;
+    color: black;
+}
+
+.shareIcon {
+    position: absolute;
+    width: 13px;
+    margin: 2px 5px;
+}
+
+.videos div p {
+    position: absolute;
+    right: 0;
+    top: 124px;
+    margin: 5px auto;
+    cursor: default;
+    font-family: 'Lato';
+    font-size: 11pt;
+}
+
+.heart {
+    position: absolute;
+    width: 15px;
+    margin: auto 7px;
+}
+
+.likeClick {
+    animation: liked 0.2s;
+}
+
+@keyframes liked {
+    to {
+        width: 25px;
+        opacity: 0;
+        transform: translate(-4px, -4px);
+    }
+}
+
+
+
+/*//////////////////MENTAL BreakDOWN FOR DESKTOP////////////////////////*/
+>>>>>>> origin/master
 
 @media only screen and (min-width: 666px) {
     header {
         background-image: url(images/top-img_1242x828.png);
         height: 828px;
     }
+<<<<<<< HEAD
     /*////menu for the desctop////////*/
+=======
+    /*////menu for the desktop////////*/
+>>>>>>> origin/master
     .burger {
         display: none;
     }
@@ -564,7 +814,11 @@ form .submit:hover {
     .tasks .svg-div {
         margin-top: 34px;
     }
+<<<<<<< HEAD
     /*////Reference section for the desctop////////*/
+=======
+    /*////Reference section for the desktop////////*/
+>>>>>>> origin/master
     #reference img {
         width: 10vw;
         border-radius: 50%;
@@ -623,7 +877,11 @@ form .submit:hover {
         grid-column-start: 1;
         grid-row-start: 1;
     }
+<<<<<<< HEAD
     button {
+=======
+    #ref-button button {
+>>>>>>> origin/master
         border: solid 3px;
         width: 200px;
         height: 45px;
@@ -635,7 +893,11 @@ form .submit:hover {
     #ref-button {
         position: relative;
     }
+<<<<<<< HEAD
     /*////the last section for the desctop////////*/
+=======
+    /*////the last section for the desktop////////*/
+>>>>>>> origin/master
     #footer {
         display: grid;
         grid-template-columns: 1fr 10px 1fr 10px 1fr;
@@ -671,4 +933,54 @@ form .submit:hover {
         background-color: darkgrey;
         margin-top: 120px;
     }
+<<<<<<< HEAD
+=======
+    /*VIDEO PAGE CONTENT */
+    #videoHeader {
+        height: 100px;
+        background: white;
+    }
+    #videoPage h1 {
+        font-size: 20pt;
+        color: #6565c0;
+    }
+    .videos {
+        grid-template-columns: repeat(auto-fill, minmax(530px, auto));
+    }
+    .videos div {
+        width: 500px;
+        height: 281.25px;
+    }
+    .videos div:nth-child(-n+10) {
+        background-size: 80px, cover;
+    }
+    .likeButton,
+    .shareButton,
+    .videos div p {
+        top: 282px;
+        font-size: 15pt;
+    }
+    .likeButton,
+    .shareButton {
+        width: 100px;
+    }
+    .heart {
+        width: 18px;
+        margin: 3px 16px;
+    }
+    @keyframes liked {
+        to {
+            width: 25px;
+            opacity: 0;
+            transform: translate(-4px, -4px);
+        }
+    }
+    .shareIcon {
+        width:
+    }
+}
+
+.dontDisplay {
+    display: none;
+>>>>>>> origin/master
 }
