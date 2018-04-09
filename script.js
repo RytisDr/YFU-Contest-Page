@@ -2,13 +2,13 @@
 
 
 /*Event listener for the video in the index page*/
-if(window.location.pathname.includes("index.html")){
-const video = document.getElementById("contest-video");
+if (window.location.pathname.includes("index.html")) {
+    const video = document.getElementById("contest-video");
 
-video.addEventListener('ended', function () {
-    video.currentTime = 0;
-    video.load();
-});
+    video.addEventListener('ended', function () {
+        video.currentTime = 0;
+        video.load();
+    });
 }
 
 
@@ -98,6 +98,7 @@ const menuListItem = document.querySelectorAll(".liItem");
 burger.addEventListener('click', function () {
     for (var i = 0; i < menuListItem.length; ++i) {
         menuListItem[i].classList.remove("dontDisplay");
+        menuListItem[i].addEventListener('click', goToPage);
     }
     menuList.classList.remove("dontDisplay");
     menuList.classList.add("menuSlide");
@@ -107,6 +108,21 @@ burger.addEventListener('click', function () {
         menuList.removeEventListener("animationend", openMenu);
     })
 })
+
+function goToPage(e) {
+    if (e.currentTarget==menuListItem[0]) {
+        window.location = "index.html";
+    }
+    if (e.currentTarget==menuListItem[1]) {
+        window.location = "apply.html";
+    }
+    if (e.currentTarget==menuListItem[2]) {
+        window.location = "video.html";
+    }
+    if (e.currentTarget==menuListItem[3]) {
+        window.location = "https://www.yfu.dk/";
+    }
+}
 xButton.addEventListener('click', function () {
     for (var i = 0; i < menuListItem.length; ++i) {
         menuListItem[i].classList.add("dontDisplay");
@@ -199,9 +215,9 @@ function liked(e) {
     })
 
     likeNumber++;
-    let nr = e.currentTarget.id-1;
+    let nr = e.currentTarget.id - 1;
     likeNrSpace[nr].innerHTML = likeNumber + " ";
-    if(likeNumber>0){
-        likeNumber=0;
+    if (likeNumber > 0) {
+        likeNumber = 0;
     }
 };
