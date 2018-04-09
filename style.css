@@ -1,657 +1,849 @@
-                html,
-                body {
-                    margin: 0;
-                    overflow-x: hidden;
-                }
-
-                html {
-                    overflow-y: scroll;
-                }
-
-                p {
-                    font-family: Lato;
-                    font-size: 3.5vw;
-                }
-                /*//////////////////Header for the home page/////////////////////*/
-
-                header {
-                    background-image: url(images/top-img_666x444.png);
-                    height: 276px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-
-                #logo {
-                    width: 15vw;
-                    max-width: 100px;
-                    left: 15px;
-                }
-                /*//////////////////slogan for the frontpage/////////////////////*/
-
-                #slogan {
-                    font-family: Lato;
-                    font-size: 4vw;
-                    position: absolute;
-                    left: 19vw;
-                    top: 45px;
-                }
-
-                #slogan p {
-                    margin: 10px auto;
-                }
-
-                #line {
-                    height: 2px;
-                    width: 30vw;
-                    background-color: #693074;
-                }
-
-                span {
-                    color: #693074;
-                }
-                /*//////////////////Navigation Menu FOR frontpage/////////////////////*/
-
-                .desktopNav {
-                    display: none;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-
-                a:visited {
-                    color: inherit;
-                }
-
-                .bar1,
-                .bar2,
-                .bar3 {
-                    width: 32px;
-                    height: 5px;
-                    background-color: #333;
-                    margin: 5px 0;
-                    transition: 0.4s;
-                }
-
-                .burger {
-                    cursor: pointer;
-                    top: 8px;
-                    right: 15px;
-                    position: absolute;
-                    z-index: 4;
-                    animation: opacity 0.6s forwards;
-                }
-
-                .XBar1,
-                .XBar2 {
-                    width: 32px;
-                    height: 3px;
-                    margin: 20px 10px;
-                    position: absolute;
-                    background-color: lightgray;
-                    transform: rotate(-45deg);
-                }
-
-                .XBar2 {
-                    transform: rotate(45deg);
-                }
-
-                .XButton {
-                    position: absolute;
-                    cursor: pointer;
-                    height: 43px;
-                    width: 50px;
-                }
-
-                .menuList {
-                    list-style-type: none;
-                    position: absolute;
-                    background-color: black;
-                    color: grey;
-                    opacity: 0.9;
-                    height: 275px;
-                    width: 0px;
-                    right: 0;
-                    top: 0;
-                    margin: 0;
-                    padding: 0;
-                    z-index: 10;
-                    font-family: Lato;
-                }
-
-                .liItem {
-                    margin: 35px 20px;
-                    text-align: right;
-                }
-
-                .menuList li:nth-child(2) {
-                    margin-top: 45px;
-                    animation: opacity 0.7s forwards;
-                }
-
-                .menuList li:nth-child(3) {
-                    animation: opacity 0.8s forwards;
-                }
-
-                .menuList li:nth-child(4) {
-                    animation: opacity 0.9s forwards;
-                }
-
-                .menuList li:nth-child(5) {
-                    animation: opacity 1.3s forwards;
-                }
-
-                .currentItem {
-                    color: white;
-                    font-weight: 600;
-                    padding-right: 9px;
-                    border-right: 4px white solid;
-                    margin-right: 7px;
-                }
-
-                .menuSlide {
-                    animation: menuSlide 0.4s forwards;
-                }
-
-                .menuSlideClose {
-                    animation: menuSlideClose 0.4s forwards;
-                }
-
-                @keyframes menuSlide {
-                    from {
-                        width: 0px;
-                    }
-                    to {
-                        width: 155px;
-                    }
-                }
-
-                @keyframes menuSlideClose {
-                    from {
-                        width: 155px;
-                    }
-                    to {
-                        width: 0px;
-                    }
-                }
-
-                @keyframes opacity {
-                    from {
-                        opacity: 0;
-                    }
-                    to {
-                        opacity: 1;
-                    }
-                }
-
-                .dontDisplay {
-                    display: none;
-                }
-                /*//////////////////Instructions section in the frontpage/////////////////////*/
-
-                #instructions {
-                    margin: 10p 10px;
-                }
-
-                #instructions img {
-                    display: none;
-                }
-
-                .tasks .svg-div {
-                    margin-top: 20px;
-                }
-
-                .tasks,
-                .footer-text {
-                    display: grid;
-                    grid-template-columns: 1fr 3fr;
-                    grid-column-gap: 10px;
-                }
-
-                .tasks h1,
-                .footer-text h1,
-                h2 {
-                    font-size: 5vw;
-                    font-family: Lato;
-                    color: white;
-                    grid-column-start: 2;
-                }
-
-                #instructions .tasks h1 {
-                    color: #83c5f2;
-                }
-
-                video {
-                    width: 90vw;
-                    min-height: 220px;
-                    display: block;
-                    margin: 0 auto;
-                    cursor: pointer;
-                }
-
-                h2 {
-                    color: #6565c0;
-                    margin: 20px 0;
-                    text-align: center;
-                }
-                /*//////////////////Refference section in the frontpage/////////////////////*/
-
-                #map {
-                    width: 90%;
-                    position: relative;
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                #map img:first-child {
-                    width: 100%;
-                }
-
-                .pin {
-                    position: absolute;
-                    height: 45px;
-                    cursor: pointer;
-                }
-
-                #map img:nth-child(2) {
-                    top: 49%;
-                    left: 32%;
-                }
-
-                #map img:nth-child(3) {
-                    top: 27%;
-                    left: 20%;
-                }
-
-                #map img:nth-child(4) {
-                    top: 62%;
-                    left: 28%;
-                }
-
-                #map img:nth-child(5) {
-                    top: 30%;
-                    left: 70%;
-                }
-
-                #reference img {
-                    width: 30vw;
-                    border-radius: 50%;
-                    position: absolute;
-                    left: 0px;
-                    top: 20%
-                }
-
-                button {
-                    background-color: white;
-                    border: solid #62d5f2;
-                    color: #62d5f2;
-                    width: 120px;
-                    border-radius: 15px;
-                    height: 30px;
-                    display: block;
-                    margin: 15px auto;
-                }
-
-                #reference {
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    font-family: Lato;
-                    text-align: center;
-                    position: relative;
-                    margin: 30px 10px;
-                }
-
-                #reference p {
-                    position: absolute;
-                    margin-left: 10px;
-                }
-                /*//////////////////The last section in the frontpage/////////////////////*/
-
-                #footer {
-                    background: -webkit-linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
-                    /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
-                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    padding: 50px 10px;
-                    color: white;
-                }
-                /*//////////////////SVG styles FOR frontpage icons/////////////////////*/
-
-                .svg-div {
-                    text-align: center;
-                }
-
-                svg {
-                    width: 5em;
-                }
-
-                path,
-                rect,
-                circle,
-                line {
-                    stroke-dasharray: 1000;
-                    stroke-dashoffset: 1000;
-                }
-
-                .drawing {
-                    animation: draw 3s linear forwards;
-                }
-
-                @keyframes draw {
-                    from {
-                        stroke-dashoffset: 1000;
-                    }
-                    to {
-                        stroke-dashoffset: 0;
-                    }
-                }
-                /*//////////////////Styles FOR Apply page icons/////////////////////*/
-
-                #body-apply {
-                    margin: 150px 0 0 0;
-                    text-align: center;
-                    font-family: Lato;
-                    background-image: url(images/top-img_1980x1269.png);
-                    background-size: cover;
-                }
-
-                #form {
-                    width: 40vw;
-                    height: 65vh;
-                    background-color: white;
-                    display: block;
-                    margin: 66px auto;
-                }
-
-                .contact-title {
-                    margin-top: 100px;
-                    color: #fff;
-                    text-transform: uppercase;
-                }
-
-                .contact-title h1 {
-                    font-size: 2vw;
-                    line-height: 10px;
-                    color: #6565c0;
-                }
-
-                #logo-apply {
-                    width: 100px;
-                    margin-right: 666px;
-                }
-
-                .contact-title h2 {
-                    font-size: 16px;
-                    font-family: Lato;
-                }
-
-                textarea {
-                    font-family: Lato;
-                    font-size: 20px;
-                }
-
-                form {
-                    margin-top: 50px;
-                }
-
-                .form-control {
-                    width: 50%;
-                    background: transparent;
-                    border: none;
-                    outline: none;
-                    border-bottom: 1px solid gray;
-                    color: black;
-                    font-size: 18px;
-                    margin-bottom: 16px;
-                }
-
-                input {
-                    height: 45px;
-                    width: 50%;
-                }
-
-                #video {
-                    display: none;
-                }
-
-                form .submit {
-                    background: #83c5f2;
-                    border-color: transparent;
-                    color: black;
-                    font-size: 20px;
-                    font-weight: bold;
-                    height: 50px;
-                    margin-top: 20px;
-                }
-
-                form .submit:hover {
-                    background-color: #6F42A7;
-                    cursor: pointer;
-                }
-
-                .upload-btn-wrapper input[type=file]:hover {
-                    cursor: pointer;
-                }
-
-                .upload-btn-wrapper {
-                    position: relative;
-                    overflow: hidden;
-                    display: inline-block;
-                }
-
-                .btn {
-                    border: 2px solid gray;
-                    color: gray;
-                    background-color: #fff;
-                    margin-top: 10px;
-                    margin-left: 0;
-                    border-radius: 10px;
-                    font-size: 15px;
-                    font-weight: bold;
-                    background: transparent;
-                }
-
-                .upload-btn-wrapper input[type=file] {
-                    font-size: 100px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    opacity: 10;
-                    width: 90px;
-                }
-                /*//////////////////BreakDOWN///desktop style FOR frontpage/////////////////////*/
-
-                @media only screen and (min-width: 666px) {
-                    header {
-                        background-image: url(images/top-img_1242x828.png);
-                        height: 828px;
-                    }
-                    /*////menu for the desctop////////*/
-                    .burger {
-                        display: none;
-                    }
-                    .desktopNav {
-                        display: inherit;
-                        position: absolute;
-                        right: 5vw;
-                        top: 40px;
-                        font-weight: 600;
-                        font-family: 'Lato', sans-serif;
-                        cursor: default;
-                        font-size: 17pt;
-                    }
-                    .desktopNav a {
-                        padding: 10px 10px;
-                        cursor: pointer;
-                        margin: 10px;
-                    }
-                    .currentItem {
-                        color: black;
-                        font-weight: 700;
-                        padding-right: 0;
-                        border-right: none;
-                        border-bottom: 3px #65256A solid;
-                    }
-                    #logo {
-                        position: absolute;
-                        width: 20vw;
-                        max-width: 200px;
-                        left: 10vw;
-                        top: 20px
-                    }
-                    #slogan {
-                        position: absolute;
-                        left: 23vw;
-                        top: 22vh;
-                    }
-                    #slogan p {
-                        margin: 10px auto;
-                        font-size: 2.1vw;
-                    }
-                    #line {
-                        height: 4px;
-                        width: 30vw;
-                        background-color: #693074;
-                        margin: 50px 10px;
-                    }
-                    .tasks h1,
-                    h2 {
-                        font-size: 1.8vw;
-                    }
-                    svg {
-                        width: 5vw;
-                    }
-                    .footer-text .svg-div {
-                        position: absolute;
-                        top: 30%;
-                        left: 35%;
-                        transform: translate(0, -100%);
-                    }
-                    #instructions p {
-                        font-size: 1vw
-                    }
-                    #instructions {
-                        display: grid;
-                        grid-template-columns: 40% 60%;
-                        grid-column-gap: 10px;
-                        margin: auto 10vw;
-                    }
-                    #instructions img {
-                        display: block;
-                        width: 100%;
-                    }
-                    video {
-                        width: 60vw;
-                    }
-                    .tasks .svg-div {
-                        margin-top: 34px;
-                    }
-                    /*////Reference section for the desctop////////*/
-                    #reference img {
-                        width: 10vw;
-                        border-radius: 50%;
-                        position: absolute;
-                        left: 17%;
-                        top: 0%;
-                    }
-                    #reference-map {
-                        display: grid;
-                        grid-template-columns: 3fr 1fr;
-                        margin: 4vh 10vw 0 10vw;
-                    }
-                    #reference {
-                        grid-column-start: 2;
-                        margin-top: 150px;
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 1.5fr;
-                    }
-                    #ref-button {
-                        font-size: 1vw;
-                        position: absolute;
-                    }
-                    #map {
-                        position: relative;
-                        width: 100%;
-                    }
-                    #map img:first-child {
-                        width: 100%;
-                    }
-                    .pin {
-                        position: absolute;
-                        height: 100px;
-                        cursor: pointer;
-                    }
-                    .pin:hover {
-                        height: 150px;
-                    }
-                    #map img:nth-child(2) {
-                        top: 55%;
-                        left: 30%;
-                    }
-                    #map img:nth-child(3) {
-                        top: 37%;
-                        left: 20%;
-                    }
-                    #map img:nth-child(4) {
-                        top: 70%;
-                        left: 29%;
-                    }
-                    #map img:nth-child(5) {
-                        top: 38%;
-                        left: 71%;
-                    }
-                    #heading-map {
-                        grid-column-start: 1;
-                        grid-row-start: 1;
-                    }
-                    button {
-                        border: solid 3px;
-                        width: 200px;
-                        height: 45px;
-                        border-radius: 25px;
-                        font-size: 1.3vw;
-                        display: block;
-                        margin: 20px auto;
-                    }
-                    #ref-button {
-                        position: relative;
-                    }
-                    /*////the last section for the desctop////////*/
-                    #footer {
-                        display: grid;
-                        grid-template-columns: 1fr 10px 1fr 10px 1fr;
-                        grid-column-gap: 20px;
-                        padding: 30px 10vw;
-                        background: -webkit-linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
-                        /* Chrome 10-25, Safari 5.1-6 */
-                        background: linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
-                        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    }
-                    .footer-text {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 110px 88px 100px;
-                        text-align: center;
-                        position: relative;
-                    }
-                    .footer-text .svg-div {
-                        grid-row-start: 1;
-                    }
-                    .footer-text h1 {
-                        grid-row-start: 2;
-                        grid-column-start: 1;
-                        font-size: 1.5vw;
-                    }
-                    .footer-text p {
-                        grid-row-start: 3;
-                        font-size: 1.1vw;
-                    }
-                    .dividing-line {
-                        width: 5px;
-                        height: 255px;
-                        background-color: darkgrey;
-                        margin-top: 120px;
-                    }
-                }
+html,
+body {
+    margin: 0;
+}
+#videoPage{
+    overflow-x: hidden;
+}
+
+#applyHtml {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: Lato;
+    font-size: 3.5vw;
+}
+
+/*BURGER MENU ON MOBILE////////////////////////////////////////*/
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 32px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger {
+    cursor: pointer;
+    top: 8px;
+    right: 15px;
+    position: absolute;
+    z-index: 4;
+    animation: opacity 0.6s forwards;
+}
+
+.XBar1,
+.XBar2 {
+    width: 32px;
+    height: 3px;
+    margin: 20px 10px;
+    position: absolute;
+    background-color: lightgray;
+    transform: rotate(-45deg);
+}
+
+.XBar2 {
+    transform: rotate(45deg);
+}
+
+.XButton {
+    position: absolute;
+    cursor: pointer;
+    height: 43px;
+    width: 50px;
+}
+
+.menuList {
+    list-style-type: none;
+    position: absolute;
+    background-color: black;
+    color: grey;
+    opacity: 0.9;
+    height: 275px;
+    width: 0px;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    font-family: Lato;
+}
+
+.liItem {
+    margin: 35px 20px;
+    text-align: right;
+}
+
+.menuList li:nth-child(2) {
+    margin-top: 45px;
+    animation: opacity 0.7s forwards;
+}
+
+.menuList li:nth-child(3) {
+    animation: opacity 0.8s forwards;
+}
+
+.menuList li:nth-child(4) {
+    animation: opacity 0.9s forwards;
+}
+
+.menuList li:nth-child(5) {
+    animation: opacity 1.3s forwards;
+}
+
+.currentItem {
+    color: white;
+    font-weight: 600;
+    padding-right: 9px;
+    border-right: 4px white solid;
+    margin-right: 7px;
+}
+
+/*BURGER MENU ANIMATIONS////////////*/
+
+.menuSlide {
+    animation: menuSlide 0.4s forwards;
+}
+
+.menuSlideClose {
+    animation: menuSlideClose 0.4s forwards;
+}
+
+@keyframes menuSlide {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 155px;
+    }
+}
+
+@keyframes menuSlideClose {
+    from {
+        width: 155px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*//////////////////Header for the home page/////////////////////*/
+
+header {
+    height: 275px;
+    background: url(images/top-img_666x444.png);
+    background-size: cover;
+    position: relative;
+
+}
+
+
+#logo {
+    width: 15vw;
+    max-width: 100px;
+    left: 15px;
+}
+
+/*//////////////////slogan for the frontpage/////////////////////*/
+
+#slogan {
+    font-family: Lato;
+    font-size: 4vw;
+    position: absolute;
+    left: 19vw;
+    top: 45px;
+}
+
+#slogan p {
+    margin: 10px auto;
+}
+
+#line {
+    height: 2px;
+    width: 30vw;
+    background-color: #693074;
+}
+
+span {
+    color: #693074;
+}
+
+/*DESKTOP NAV, NOT DISPLAYED ON MOBILE*/
+
+.desktopNav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*//////////////////Instructions section in the frontpage/////////////////////*/
+
+#instructions {
+    margin: 10p 10px;
+}
+
+#instructions img {
+    display: none;
+}
+
+.tasks .svg-div {
+    margin-top: 20px;
+}
+
+.tasks,
+.footer-text {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10px;
+}
+
+.tasks h1,
+.footer-text h1,
+h2 {
+    font-size: 5vw;
+    font-family: Lato;
+    color: white;
+    grid-column-start: 2;
+}
+
+#instructions .tasks h1 {
+    color: #83c5f2;
+}
+
+video {
+    width: 90vw;
+    min-height: 220px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+h2 {
+    color: #6565c0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*//////////////////Refference section in the frontpage/////////////////////*/
+
+#map {
+    width: 90%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#map img:first-child {
+    width: 100%;
+}
+
+.pin {
+    position: absolute;
+    height: 45px;
+    cursor: pointer;
+}
+
+#map img:nth-child(2) {
+    top: 49%;
+    left: 32%;
+}
+
+#map img:nth-child(3) {
+    top: 27%;
+    left: 20%;
+}
+
+#map img:nth-child(4) {
+    top: 62%;
+    left: 28%;
+}
+
+#map img:nth-child(5) {
+    top: 30%;
+    left: 70%;
+}
+
+#reference img {
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 20%
+}
+
+#ref-button button {
+    background-color: white;
+    border: solid #62d5f2;
+    color: #62d5f2;
+    width: 120px;
+    border-radius: 15px;
+    height: 30px;
+    display: block;
+    margin: 15px auto;
+}
+
+#reference {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: Lato;
+    text-align: center;
+    position: relative;
+    margin: 30px 10px;
+}
+
+#reference p {
+    position: absolute;
+    margin-left: 10px;
+}
+
+/*//////////////////The last section in the frontpage/////////////////////*/
+
+#footer {
+    background: -webkit-linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px 10px;
+    color: white;
+}
+
+/*//////////////////SVG styles FOR frontpage icons/////////////////////*/
+
+.svg-div {
+    text-align: center;
+}
+
+svg {
+    width: 5em;
+}
+
+path,
+rect,
+circle,
+line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.drawing {
+    animation: draw 3s linear forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*//////////////////Styles FOR Apply page icons/////////////////////*/
+
+#body-apply {
+    margin: 150px 0 0 0;
+    text-align: center;
+    font-family: Lato;
+    background-image: url(images/top-img_1980x1269.png);
+    background-size: cover;
+}
+
+#form {
+    width: 40vw;
+    height: 65vh;
+    background-color: white;
+    display: block;
+    margin: 66px auto;
+}
+
+.contact-title {
+    margin-top: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact-title h1 {
+    font-size: 2vw;
+    line-height: 10px;
+    color: #6565c0;
+}
+
+#logo-apply {
+    width: 100px;
+    margin-right: 666px;
+}
+
+.contact-title h2 {
+    font-size: 16px;
+    font-family: Lato;
+}
+
+textarea {
+    font-family: Lato;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+    width: 50%;
+}
+
+#video {
+    display: none;
+}
+
+form .submit {
+    background: #83c5f2;
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: #6F42A7;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file]:hover {
+    cursor: pointer;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 10;
+    width: 90px;
+}
+
+/*MOBILE VIDEO PAGE CONTENT PROPERTIES//////////*/
+
+/*LOGO*/
+
+#logotype {
+    position: absolute;
+    width: 25vw;
+    max-width: 100px;
+    left: 3vw;
+}
+
+#videoPage h1 {
+    text-align: center;
+    font-family: 'Lato';
+    color: #6565c0;
+    font-size: 13pt;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+}
+
+.videos div {
+    margin: 30px auto;
+    width: 220px;
+    height: 123.75px;
+    cursor: pointer;
+    position: relative;
+}
+
+.videos div:nth-child(1) {
+    background: url(images/play-arrow_280x306.png), url(images/Group-of-girls_500x281.jpg);
+}
+
+.videos div:nth-child(2) {
+    background: url(images/play-arrow_280x306.png), url(images/backs-with-slogan_500x281.jpg);
+}
+
+.videos div:nth-child(3) {
+    background: url(images/play-arrow_280x306.png), url(images/bonfire_500x281.jpg);
+}
+
+.videos div:nth-child(4) {
+    background: url(images/play-arrow_280x306.png), url(images/holding-flags_500x281.jpg);
+}
+
+.videos div:nth-child(5) {
+    background: url(images/play-arrow_280x306.png), url(images/human-chain_500x281.jpg);
+}
+
+.videos div:nth-child(6) {
+    background: url(images/play-arrow_280x306.png), url(images/Laura-with-children_500x281.jpg);
+}
+
+.videos div:nth-child(7) {
+    background: url(images/play-arrow_280x306.png), url(images/students-on-the-beach_500x281.jpg);
+}
+
+.videos div:nth-child(8) {
+    background: url(images/play-arrow_280x306.png), url(images/top-img_666x444.png);
+}
+
+.videos div:nth-child(9) {
+    background: url(images/play-arrow_280x306.png), url(images/water-ski_500x281.jpg);
+}
+
+.videos div:nth-child(10) {
+    background-image: url(images/play-arrow_280x306.png), url(images/window_500x281.jpg);
+}
+
+.videos div:nth-child(-n+10) {
+    background-size: 30px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.likeButton,
+.shareButton {
+    position: relative;
+    top: 125px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-family: 'Lato';
+    background-color: #8883E9;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 12px;
+    border-radius: 7px;
+}
+
+.shareButton {
+    position: absolute;
+    background-color: #62d5f2;
+    color: black;
+}
+
+.shareIcon {
+    position: absolute;
+    width: 13px;
+    margin: 2px 5px;
+}
+
+.videos div p {
+    position: absolute;
+    right: 0;
+    top: 124px;
+    margin: 5px auto;
+    cursor: default;
+    font-family: 'Lato';
+    font-size: 11pt;
+}
+
+.heart {
+    position: absolute;
+    width: 15px;
+    margin: auto 7px;
+}
+
+.likeClick {
+    animation: liked 0.2s;
+}
+
+@keyframes liked {
+    to {
+        width: 25px;
+        opacity: 0;
+        transform: translate(-4px, -4px);
+    }
+}
+
+
+
+/*//////////////////MENTAL BreakDOWN FOR DESKTOP////////////////////////*/
+
+@media only screen and (min-width: 666px) {
+    header {
+        background-image: url(images/top-img_1242x828.png);
+        height: 828px;
+    }
+    /*////menu for the desktop////////*/
+    .burger {
+        display: none;
+    }
+    .desktopNav {
+        display: inherit;
+        position: absolute;
+        right: 5vw;
+        top: 40px;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        cursor: default;
+        font-size: 17pt;
+    }
+    .desktopNav a {
+        padding: 10px 10px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .currentItem {
+        color: black;
+        font-weight: 700;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 3px #65256A solid;
+    }
+    #logo {
+        position: absolute;
+        width: 20vw;
+        max-width: 200px;
+        left: 10vw;
+        top: 20px
+    }
+    #slogan {
+        position: absolute;
+        left: 23vw;
+        top: 22vh;
+    }
+    #slogan p {
+        margin: 10px auto;
+        font-size: 2.1vw;
+    }
+    #line {
+        height: 4px;
+        width: 30vw;
+        background-color: #693074;
+        margin: 50px 10px;
+    }
+    .tasks h1,
+    h2 {
+        font-size: 1.8vw;
+    }
+    svg {
+        width: 5vw;
+    }
+    .footer-text .svg-div {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        transform: translate(0, -100%);
+    }
+    #instructions p {
+        font-size: 1vw
+    }
+    #instructions {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 10px;
+        margin: auto 10vw;
+    }
+    #instructions img {
+        display: block;
+        width: 100%;
+    }
+    video {
+        width: 60vw;
+    }
+    .tasks .svg-div {
+        margin-top: 34px;
+    }
+    /*////Reference section for the desktop////////*/
+    #reference img {
+        width: 10vw;
+        border-radius: 50%;
+        position: absolute;
+        left: 17%;
+        top: 0%;
+    }
+    #reference-map {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin: 4vh 10vw 0 10vw;
+    }
+    #reference {
+        grid-column-start: 2;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+    }
+    #ref-button {
+        font-size: 1vw;
+        position: absolute;
+    }
+    #map {
+        position: relative;
+        width: 100%;
+    }
+    #map img:first-child {
+        width: 100%;
+    }
+    .pin {
+        position: absolute;
+        height: 100px;
+        cursor: pointer;
+    }
+    .pin:hover {
+        height: 150px;
+    }
+    #map img:nth-child(2) {
+        top: 55%;
+        left: 30%;
+    }
+    #map img:nth-child(3) {
+        top: 37%;
+        left: 20%;
+    }
+    #map img:nth-child(4) {
+        top: 70%;
+        left: 29%;
+    }
+    #map img:nth-child(5) {
+        top: 38%;
+        left: 71%;
+    }
+    #heading-map {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    #ref-button button {
+        border: solid 3px;
+        width: 200px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.3vw;
+        display: block;
+        margin: 20px auto;
+    }
+    #ref-button {
+        position: relative;
+    }
+    /*////the last section for the desktop////////*/
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 10px 1fr 10px 1fr;
+        grid-column-gap: 20px;
+        padding: 30px 10vw;
+        background: -webkit-linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6b43a4, #8743be, #8586e2, #72b4ee, #62d5f2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .footer-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 88px 100px;
+        text-align: center;
+        position: relative;
+    }
+    .footer-text .svg-div {
+        grid-row-start: 1;
+    }
+    .footer-text h1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        font-size: 1.5vw;
+    }
+    .footer-text p {
+        grid-row-start: 3;
+        font-size: 1.1vw;
+    }
+    .dividing-line {
+        width: 5px;
+        height: 255px;
+        background-color: darkgrey;
+        margin-top: 120px;
+    }
+    /*VIDEO PAGE CONTENT */
+    #videoHeader {
+        height: 100px;
+        background: white;
+    }
+    #videoPage h1 {
+        font-size: 20pt;
+        color: #6565c0;
+    }
+    .videos {
+        grid-template-columns: repeat(auto-fill, minmax(530px, auto));
+    }
+    .videos div {
+        width: 500px;
+        height: 281.25px;
+    }
+    .videos div:nth-child(-n+10) {
+        background-size: 80px, cover;
+    }
+    .likeButton,
+    .shareButton,
+    .videos div p {
+        top: 282px;
+        font-size: 15pt;
+    }
+    .likeButton,
+    .shareButton{
+        width: 100px;
+    }
+    .heart{
+        width: 18px;
+        margin: 3px 16px;
+    }
+    @keyframes liked {
+    to {
+        width: 25px;
+        opacity: 0;
+        transform: translate(-4px, -4px);
+    }
+}
+    .shareIcon{
+        width:
+    }
+}
+
+.dontDisplay {
+    display: none;
+}
