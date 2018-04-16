@@ -205,6 +205,7 @@ let likeNumber = 0;
 let clicks = {};
 let likeNrSpace = document.querySelectorAll(".videos div p span");
 const likeButtons = document.querySelectorAll(".likeButton").forEach(function (elem) {
+    elem.dataset.likes=0
     elem.addEventListener('click', liked);
 });
 
@@ -215,10 +216,16 @@ function liked(e) {
         e.currentTarget.classList.remove("likeClick");
     })
 
+    let likes = e.target.dataset.likes;
+    likes++
+    e.target.dataset.likes=likes
+    let nr = e.currentTarget.id - 1;
+    likeNrSpace[nr].innerHTML = likes + " ";
+/*
     likeNumber++;
     let nr = e.currentTarget.id - 1;
     likeNrSpace[nr].innerHTML = likeNumber + " ";
     if (likeNumber > 0) {
         likeNumber = 0;
-    }
+    }*/
 };
