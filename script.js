@@ -201,8 +201,6 @@ allPins.forEach(function (pin) {
 })
 
 /////////////////////////////// LIKE VIDEO FUNCTIONS////////////////////////////////////////
-let likeNumber = 0;
-let clicks = {};
 let likeNrSpace = document.querySelectorAll(".videos div p span");
 const likeButtons = document.querySelectorAll(".likeButton").forEach(function (elem) {
     elem.dataset.likes=0
